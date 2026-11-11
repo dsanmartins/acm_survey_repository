@@ -1,0 +1,24 @@
+TITLE-ABS-KEY(
+  ("quantum software"
+   OR "quantum program*"
+   OR "quantum programming"
+   OR "quantum circuit*")
+  AND
+  (constraint*
+   OR invariant*
+   OR "well-formedness"
+   OR "well formedness"
+   OR "model validation"
+   OR "structural validation")
+  AND
+  ("software engineering"
+   OR "software model*"
+   OR metamodel*
+   OR "meta-model*"
+   OR "model-driven"
+   OR "model driven"
+   OR "domain-specific language*"
+   OR "domain specific language*"
+   OR UML
+   OR "static analysis")
+)

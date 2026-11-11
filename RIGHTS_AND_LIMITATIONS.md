@@ -1,0 +1,7 @@
+# Distribution and evidence boundaries
+
+The scientific authors have authorized the original contributions under the stated license scope. This does **not** grant independent redistribution rights over third-party full-text publications, metadata exports, historical private records or uncertain external components.
+
+This curated repository **omits the 13 complete original files whose external distribution status remains uncertain** in the source audit, rather than treating uncertainty as permission. However, omission alone is not a legal clearance of the manuscript, individual figures, factual bibliographic fields, or derivative records. The package is therefore a **private reviewer-draft candidate** until the authors complete a release check. No repository publication, DOI or ACM badge is claimed.
+
+The catalogue consists of bibliographic identity fields and study flags; original papers are not included. The separately distributed manuscript archive preserves the approved article, supplement, research-process declaration, and the eleven unchanged original PDF figures. These files are not duplicated in this repository-only ZIP. Reproduction covers explicitly enumerated analytical results, not independent source judgment, corpus-wide double extraction, or Qiskit execution. The intermittent binary PNG reproducibility issue documented for the broader original workflow is not claimed to be resolved by this streamlined reproduction.

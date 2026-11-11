@@ -1,0 +1,87 @@
+rq,axis,category_id,category_version,category_name,memberships,unique_items,unique_publications
+RQ1,evidence_nature,SYN-RQ1-C0001,SA01-staging-definition-1,HYPOTHETICAL_EXAMPLE,26,26,17
+RQ1,evidence_nature,SYN-RQ1-C0002,SA01-staging-definition-1,MUTATION_OPERATOR,87,87,23
+RQ1,evidence_nature,SYN-RQ1-C0003,SA01-staging-definition-1,REAL_OBSERVED,62,62,14
+RQ1,evidence_nature,SYN-RQ1-C0004,SA01-staging-definition-1,REPOSITORY_REPORTED,148,148,21
+RQ1,evidence_nature,SYN-RQ1-C0005,SA01-staging-definition-1,SYNTHETIC_INJECTED,49,49,24
+RQ1,evidence_nature,SYN-RQ1-C0006,SA01-staging-definition-1,TAXONOMY_ONLY,81,81,17
+RQ1,evidence_nature,SYN-RQ1-C0007,SA01-staging-definition-1,UNCLEAR,10,10,9
+RQ1,phenomenon_family,SYN-RQ1-C0008,SA01-staging-definition-1,Socio-technical community smells and quality phenomena,9,9,1
+RQ1,phenomenon_family,SYN-RQ1-C0009,SA01-staging-definition-1,Generated/transformed artifact invalidity or incompleteness,17,17,12
+RQ1,origin,SYN-RQ1-C0010,SA01-staging-definition-1,Deliberately constructed fault or mutation,128,128,45
+RQ1,manifestation,SYN-RQ1-C0011,SA01-staging-definition-1,Syntactic or compilation invalidity of generated/transformed artifacts,2,2,2
+RQ1,affected_artifact,SYN-RQ1-C0012,SA01-staging-definition-1,Automatically generated or transformed software artifact,89,89,27
+RQ1,affected_artifact,SYN-RQ1-C0014,SA01-staging-definition-1,Program/source or circuit instance,327,327,90
+RQ1,affected_artifact,SYN-RQ1-C0015,SA01-staging-definition-1,Implementation or tool component,106,106,23
+RQ1,affected_artifact,SYN-RQ1-C0016,SA01-staging-definition-1,Test or validation infrastructure,25,25,6
+RQ1,affected_artifact,SYN-RQ1-C0017,SA01-staging-definition-1,"Reported output, verdict or diagnostic object",8,8,6
+RQ1,affected_artifact,SYN-RQ1-C0018,SA01-staging-definition-1,Model or design representation,5,5,5
+RQ1,manifestation,SYN-RQ1-C0019,SA01-staging-definition-1,Source-reported syntax rejection,1,1,1
+RQ1,manifestation,SYN-RQ1-C0020,SA01-staging-definition-1,Compilation or transpilation-stage failure,9,9,8
+RQ1,manifestation,SYN-RQ1-C0021,SA01-staging-definition-1,Operational failure or noncompletion,46,46,24
+RQ1,manifestation,SYN-RQ1-C0022,SA01-staging-definition-1,Output or specification-relative discrepancy,86,86,42
+RQ1,manifestation,SYN-RQ1-C0023,SA01-staging-definition-1,Numerical deviation,7,7,7
+RQ1,manifestation,SYN-RQ1-C0024,SA01-staging-definition-1,Intermittent or flaky behavior,15,15,6
+RQ1,manifestation,SYN-RQ1-C0025,SA01-staging-definition-1,Diagnostic or quality-indicator outcome,140,140,57
+RQ1,phenomenon_family,SYN-RQ1-C0026,SA01-staging-definition-1,"Program, state, or dependency consistency problem",107,107,33
+RQ1,phenomenon_family,SYN-RQ1-C0027,SA01-staging-definition-1,Numerical or computational stability problem,4,4,4
+RQ1,phenomenon_family,SYN-RQ1-C0028,SA01-staging-definition-1,Robustness or confidentiality weakness,3,3,3
+RQ1,phenomenon_family,SYN-RQ1-C0029,SA01-staging-definition-1,"Structural, design, representation, or integration adequacy problem",67,67,28
+RQ1,phenomenon_family,SYN-RQ1-C0030,SA01-staging-definition-1,Analysis or test-assessment adequacy problem,19,19,9
+RQ2,technique_family,SYN-RQ2-C0001,SA01-staging-definition-2,Static analysis and linting,63,63,48
+RQ2,technique_family,SYN-RQ2-C0002,SA01-staging-definition-1,Formal verification and symbolic reasoning,33,33,26
+RQ2,technique_family,SYN-RQ2-C0003,SA01-staging-definition-2,Assertion- and statistical-oracle-based validation,84,84,56
+RQ2,technique_family,SYN-RQ2-C0004,SA01-staging-definition-1,Relational and property-based testing,46,46,32
+RQ2,technique_family,SYN-RQ2-C0005,SA01-staging-definition-2,"Test generation, selection, and guided exploration",69,69,43
+RQ2,technique_family,SYN-RQ2-C0006,SA01-staging-definition-1,Mutation-based assessment,24,24,22
+RQ2,technique_family,SYN-RQ2-C0007,SA01-staging-definition-1,Debugging and fault localization,20,20,16
+RQ2,technique_family,SYN-RQ2-C0008,SA01-staging-definition-1,Model-based testing,5,5,5
+RQ2,technique_family,SYN-RQ2-C0009,SA01-staging-definition-1,Dynamic analysis and monitoring,15,15,14
+RQ2,analysis_mode,SYN-RQ2-C0011,SA01-staging-definition-1,DYNAMIC,317,317,124
+RQ2,analysis_mode,SYN-RQ2-C0012,SA01-staging-definition-1,FORMAL,35,35,28
+RQ2,analysis_mode,SYN-RQ2-C0013,SA01-staging-definition-1,HYBRID,19,19,10
+RQ2,analysis_mode,SYN-RQ2-C0014,SA01-staging-definition-1,STATIC,80,80,60
+RQ2,technique_family,SYN-RQ2-C0015,SA01-staging-definition-1,Coverage adequacy criteria without generation feedback,13,13,3
+RQ2,technique_family,SYN-RQ2-C0016,SA01-staging-definition-1,Input-state partition and selection criteria,5,5,1
+RQ2,technique_family,SYN-RQ2-C0017,SA01-staging-definition-1,Learned noise-aware oracle support,2,2,2
+RQ2,technique_family,SYN-RQ2-C0018,SA01-staging-definition-1,Source-to-model correspondence checking,2,2,2
+RQ2,technique_family,SYN-RQ2-C0019,SA01-staging-definition-1,Bug reproduction and fix-validation workflow,1,1,1
+RQ2,technique_family,SYN-RQ2-C0020,SA01-staging-definition-1,Truth-table component functionality validation,1,1,1
+RQ2,test_level,SYN-RQ2-C0021,SA01-staging-definition-1,UNIT_TESTING,16,16,16
+RQ2,test_level,SYN-RQ2-C0022,SA01-staging-definition-1,INTEGRATION_TESTING,8,8,8
+RQ2,test_level,SYN-RQ2-C0023,SA01-staging-definition-1,SYSTEM_TESTING,6,6,6
+RQ3,representation_role,SYN-RQ3-C0001,SA01-staging-definition-2,Internal implementation/analysis representation,9,9,9
+RQ3,representation_family,SYN-RQ3-C0002,SA01-staging-definition-1,Metamodel and profile modeling abstraction,39,39,22
+RQ3,representation_family,SYN-RQ3-C0003,SA01-staging-definition-1,"Language, DSL, and specification-language abstraction",26,26,26
+RQ3,representation_family,SYN-RQ3-C0005,SA01-staging-definition-1,Semantic program/state abstraction,22,22,20
+RQ3,representation_role,SYN-RQ3-C0006,SA01-staging-definition-1,"Requirements, configuration, and variability representation",13,13,11
+RQ3,representation_role,SYN-RQ3-C0007,SA01-staging-definition-1,Testing and test-specification representation,24,24,21
+RQ3,representation_family,SYN-RQ3-C0008,SA01-staging-definition-1,Software/system architecture representation,37,37,37
+RQ3,representation_family,SYN-RQ3-C0009,SA01-staging-definition-1,"Lifecycle, process, and workflow representation",13,13,13
+RQ3,representation_family,SYN-RQ3-C0010,SA01-staging-definition-1,Substantive program/intermediate representation,30,30,26
+RQ3,representation_role,SYN-RQ3-C0011,SA01-staging-definition-1,Program/software analysis or reasoning,25,25,21
+RQ3,representation_role,SYN-RQ3-C0012,SA01-staging-definition-1,Transformation/interoperability,54,54,46
+RQ3,representation_role,SYN-RQ3-C0013,SA01-staging-definition-1,Runtime/execution support,27,27,23
+RQ4,constraint_form_role,SYN-RQ4-C0001,SA01-staging-definition-1,ASSERTION,40,40,20
+RQ4,constraint_content_domain,SYN-RQ4-C0002,SA01-staging-definition-1,CONFIGURATION_VARIABILITY,2,2,1
+RQ4,constraint_content_domain,SYN-RQ4-C0003,SA01-staging-definition-1,CONSISTENCY,37,37,19
+RQ4,constraint_content_domain,SYN-RQ4-C0004,SA01-staging-definition-1,HARDWARE_COMPATIBILITY,11,11,9
+RQ4,constraint_form_role,SYN-RQ4-C0005,SA01-staging-definition-1,INVARIANT,11,11,8
+RQ4,constraint_form_role,SYN-RQ4-C0006,SA01-staging-definition-1,POSTCONDITION,36,36,28
+RQ4,constraint_form_role,SYN-RQ4-C0007,SA01-staging-definition-1,PRECONDITION,22,22,18
+RQ4,constraint_content_domain,SYN-RQ4-C0008,SA01-staging-definition-1,PROBABILISTIC_STATISTICAL,42,42,30
+RQ4,constraint_content_domain,SYN-RQ4-C0009,SA01-staging-definition-1,RESOURCE,8,8,7
+RQ4,constraint_content_domain,SYN-RQ4-C0010,SA01-staging-definition-1,Semantic correctness and preservation constraints,22,22,19
+RQ4,constraint_content_domain,SYN-RQ4-C0011,SA01-staging-definition-1,Structural constraints,38,38,19
+RQ4,constraint_content_domain,SYN-RQ4-C0012,SA01-staging-definition-1,TEMPORAL,5,5,4
+RQ4,constraint_content_domain,SYN-RQ4-C0013,SA01-staging-definition-1,TYPE_RULE,24,24,15
+RQ4,constraint_content_domain,SYN-RQ4-C0014,SA01-staging-definition-1,WELL_FORMEDNESS,73,73,25
+RQ4,checkability_status,SYN-RQ4-C0015,SA01-staging-definition-1,NO,1,1,1
+RQ4,checkability_status,SYN-RQ4-C0016,SA01-staging-definition-1,NR,100,100,42
+RQ4,checkability_status,SYN-RQ4-C0017,SA01-staging-definition-1,UNCLEAR,7,7,2
+RQ4,checkability_status,SYN-RQ4-C0018,SA01-staging-definition-1,YES,264,264,106
+RQ5,candidate_provenance,SYN-RQ5-C0001,SA01-staging-definition-1,REVIEWER_DERIVED,29,29,21
+RQ5,candidate_provenance,SYN-RQ5-C0002,SA01-staging-definition-1,SOURCE_EXPLICIT,18,18,18
+RQ5,operationalization_requirements,SYN-RQ5-C0006,SA01-staging-definition-2,Required model information and relations,45,45,37
+RQ5,operationalization_requirements,SYN-RQ5-C0007,SA01-staging-definition-1,Runtime observation / sampled-evidence requirement,2,2,2
+RQ5,operationalization_pairing_provenance,SYN-RQ5-C0008,SA01-staging-definition-1,Source-explicit rule with reviewer-derived mutation/benchmark,4,4,2

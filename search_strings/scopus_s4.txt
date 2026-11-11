@@ -1,0 +1,20 @@
+TITLE-ABS-KEY(
+  ("quantum software"
+   OR "quantum program*"
+   OR "quantum programming"
+   OR "quantum circuit*")
+  AND
+  ("bug-fix pattern*"
+   OR "bug fix pattern*"
+   OR "code smell*"
+   OR "software smell*"
+   OR "feature model*"
+   OR "variability model*"
+   OR "modeling strateg*"
+   OR "modelling strateg*"
+   OR "model constraint*"
+   OR "model-level constraint*"
+   OR "model level constraint*"
+   OR "structural constraint*"
+   OR "configuration constraint*")
+)

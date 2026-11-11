@@ -1,0 +1,19 @@
+TITLE-ABS-KEY(
+  ("quantum software"
+   OR "quantum program*"
+   OR "quantum programming"
+   OR "quantum circuit*")
+  AND
+  ("model-driven"
+   OR "model driven"
+   OR "model-driven engineering"
+   OR "model driven engineering"
+   OR metamodel*
+   OR "meta-model*"
+   OR "domain-specific model*"
+   OR "domain specific model*"
+   OR "domain-specific language*"
+   OR "domain specific language*"
+   OR "software model*"
+   OR UML)
+)

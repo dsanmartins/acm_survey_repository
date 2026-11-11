@@ -1,0 +1,57 @@
+{
+  "RQ1": {
+    "approved_or_resolved_sets": 2033,
+    "context_application_proposals": 0,
+    "original_scopes": 2455,
+    "positive_memberships": 1683,
+    "positive_sets": 1472,
+    "scoped_nonpositive_sets": 561,
+    "source_items": 491,
+    "source_publications": 120,
+    "unapproved_or_incomplete": 422
+  },
+  "RQ2": {
+    "approved_or_resolved_sets": 1353,
+    "context_application_proposals": 0,
+    "original_scopes": 1353,
+    "positive_memberships": 864,
+    "positive_sets": 864,
+    "scoped_nonpositive_sets": 489,
+    "source_items": 451,
+    "source_publications": 182,
+    "unapproved_or_incomplete": 0
+  },
+  "RQ3": {
+    "approved_or_resolved_sets": 280,
+    "context_application_proposals": 0,
+    "original_scopes": 394,
+    "positive_memberships": 319,
+    "positive_sets": 270,
+    "scoped_nonpositive_sets": 10,
+    "source_items": 197,
+    "source_publications": 140,
+    "unapproved_or_incomplete": 114
+  },
+  "RQ4": {
+    "approved_or_resolved_sets": 1116,
+    "context_application_proposals": 0,
+    "original_scopes": 1116,
+    "positive_memberships": 743,
+    "positive_sets": 743,
+    "scoped_nonpositive_sets": 373,
+    "source_items": 372,
+    "source_publications": 143,
+    "unapproved_or_incomplete": 0
+  },
+  "RQ5": {
+    "approved_or_resolved_sets": 96,
+    "context_application_proposals": 89,
+    "original_scopes": 188,
+    "positive_memberships": 98,
+    "positive_sets": 96,
+    "scoped_nonpositive_sets": 0,
+    "source_items": 47,
+    "source_publications": 39,
+    "unapproved_or_incomplete": 92
+  }
+}

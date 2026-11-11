@@ -1,0 +1,22 @@
+TITLE-ABS-KEY(
+  ("quantum software"
+   OR "quantum program*"
+   OR "quantum programming")
+  AND
+  ("software bug*"
+   OR "program bug*"
+   OR "bug pattern*"
+   OR "software fault*"
+   OR "program fault*"
+   OR "software defect*"
+   OR "fault model*"
+   OR "bug taxonomy"
+   OR "bug classification"
+   OR "fault classification"
+   OR "static analysis"
+   OR "software testing"
+   OR "program testing"
+   OR "mutation testing"
+   OR "software validation"
+   OR "program validation")
+)
