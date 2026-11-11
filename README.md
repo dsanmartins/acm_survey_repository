@@ -1,6 +1,6 @@
 # Quantum Software Quality — Reproducibility repository
 
-This **repository-only** package accompanies the separately distributed article and supplementary material, *Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Systematic Survey*, prepared for peer review in ACM manuscript format. No LaTeX manuscript, compiled article/supplement PDF, or validated figure PDF is included in this repository ZIP. Those assets are provided in the separate **manuscript ZIP**.
+This **repository-only** package accompanies the separately distributed article and supplementary material, *Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Systematic Survey*, prepared for peer review in ACM manuscript format. No LaTeX manuscript, compiled article/supplement PDF, or validated figure PDF is included in this repository. 
 
 Start with [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) for a short, command-by-command reproduction guide.
 
