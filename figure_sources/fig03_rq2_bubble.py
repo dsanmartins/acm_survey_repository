@@ -1,4 +1,4 @@
-"""Official ACM Figure 3: editable native-width, approved same-item family-mode support."""
+"""Manuscript Figure 4 (legacy filename fig03): native-width RQ2 family-mode support."""
 import argparse
 import json
 import textwrap

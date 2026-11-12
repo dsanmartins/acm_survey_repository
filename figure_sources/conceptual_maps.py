@@ -1,4 +1,4 @@
-"""Editable design proposals for QCC-CSUR conceptual maps.
+"""Editable, manuscript-integrated QCC survey conceptual maps.
 
 These diagrams illustrate source-grounded categories, not new empirical pairings.
 Only matplotlib is required. Source terminology: current QCC manuscript

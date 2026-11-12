@@ -1,6 +1,6 @@
 # Retrospective PRISMA 2020 reporting crosswalk
 
-This document compares the **reporting already present** in the QCC manuscript and reviewer repository with PRISMA 2020. It is **not** a claim that a PRISMA-registered protocol was followed prospectively, that review conduct was assessed by PRISMA, or that the 243 publications are 243 independent studies.
+This document retrospectively maps **reporting already present** in the QCC survey manuscript and its companion repository to PRISMA 2020. The manuscript is a *research survey*, and the mapping is provided for transparency rather than to impose systematic-review eligibility criteria on the contribution. It is **not** a claim that a PRISMA-registered protocol was followed prospectively, that review conduct was assessed by PRISMA, or that the 243 publications are 243 independent studies.
 
 The detailed **27-item checklist** is [`docs/PRISMA_2020_CROSSWALK.csv`](docs/PRISMA_2020_CROSSWALK.csv). Status values describe disclosure: Reported, Partially reported, Not performed, or Not applicable. In particular, no formal primary-study quality/risk-of-bias appraisal or certainty assessment was performed; no meta-analysis or intervention effect measure was calculated. These facts are not fixed by filling out a retrospective checklist.
 

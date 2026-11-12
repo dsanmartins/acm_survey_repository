@@ -41,7 +41,7 @@ def main():
     check(not (R/"manuscript").exists(), "unexpected manuscript directory in repository-only package")
     print("PASS: repository-only file integrity, selected-publication cohorts (243/242/240), candidate-screening trace (343/256/243), and retrospective PRISMA mapping")
     print("The 11 original PDF figures and the compiled manuscript are in separately supplied manuscript ZIP; not tested here.")
-    print("Rights status: private reviewer candidate; release authorization requires separate review.")
+    print("Existing Zenodo DOI supplied: https://doi.org/10.5281/zenodo.24168011; revised ZIP deposit and rights scope require separate verification.")
 
 if __name__=="__main__":
     main()

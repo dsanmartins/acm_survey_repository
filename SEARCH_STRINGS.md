@@ -1,6 +1,6 @@
 # Search strings and search-strategy reproducibility
 
-This directory contains the **eight original text files supplied by the authors** in `search_strings.zip` for the systematic search protocol, reproduced byte-for-byte. They were not in the previous curated reviewer repository.
+This directory contains the **eight original text files supplied by the authors** in `search_strings.zip` for the documented structured search strategy, reproduced byte-for-byte. They were not in the previous curated reviewer repository.
 
 ## Mapping to databases and search groups
 
@@ -19,7 +19,7 @@ The manuscript reports searches on **30 September 2026** (S1–S3) and supplemen
 2. Copy its exact contents into the corresponding database advanced search interface, subject to current database syntax and access restrictions.
 3. If independently rerunning, record the execution date, database version/coverage, filters applied, and retrieved counts. Treat the resulting hit set as a **new run**, not necessarily as the historical 2026 hit set.
 
-No licensed Scopus/Web of Science exports, original result snapshots, or individual record-to-query mappings are distributed. Thus, the presence of query strings **improves transparency** but does not independently reproduce the historical **549 retrieved occurrences**, deduplication, full-text selection, or review decisions. `make verify`, `make reproduce`, and `make composition` still validate only curated research data, not live database queries. The supplied text files establish the query text submitted for this package, not independent proof of their historical execution. The repository's private reviewer-draft release status remains unchanged.
+No licensed Scopus/Web of Science exports, original result snapshots, or individual record-to-query mappings are distributed. Thus, the presence of query strings **improves transparency** but does not independently reproduce the historical **549 retrieved occurrences**, deduplication, full-text selection, or review decisions. `make verify`, `make reproduce`, and `make composition` still validate only curated research data, not live database queries. The supplied text files establish the query text submitted for this package, not independent proof of their historical execution. The search files are unchanged in this editorial revision. The authors have supplied an existing Zenodo DOI (https://doi.org/10.5281/zenodo.24168011); distribution of this revised ZIP under that DOI requires a separately verified Zenodo version update.
 
 ## Provenance and integrity
 

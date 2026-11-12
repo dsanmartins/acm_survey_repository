@@ -1,5 +1,5 @@
 prisma_item,topic,reporting_status,qcc_location,interpretation_or_gap
-1,Title,Reported,main.tex title,Systematic survey title
+1,Title,Reported,main.tex title,Research survey title; not represented as a PRISMA-registered systematic review
 2,Abstract,Partially reported,main.tex abstract,91-word journal abstract is not a PRISMA abstract checklist
 3,Rationale,Reported,sections/01_introduction.tex,Problem and scope
 4,Objectives,Reported,sections/03_methodology.tex §3.1,Five explicit research questions
@@ -25,4 +25,4 @@ prisma_item,topic,reporting_status,qcc_location,interpretation_or_gap
 24,Registration and protocol,Partially reported,§3 methodology; underlying versioned protocol history,No prospective registered PRISMA protocol or public registry ID claimed
 25,Support,Reported,Funding and Competing Interests,No specific funding reported
 26,Competing interests,Reported,Funding and Competing Interests,None reported
-27,"Availability of data, code and other materials",Partially reported,§10; README; REPRODUCIBILITY.md,"Curated data and scripts included, raw licensed exports/private material excluded; no public DOI"
+27,"Availability of data, code and other materials",Partially reported,§10; README; REPRODUCIBILITY.md,Curated research data and scripts; existing Zenodo DOI supplied: https://doi.org/10.5281/zenodo.24168011; licensed raw exports and restricted evidence excluded

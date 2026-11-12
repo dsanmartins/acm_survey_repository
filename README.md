@@ -1,6 +1,14 @@
 # Quantum Software Quality — Reproducibility repository
 
-This **repository-only** package accompanies the separately distributed article and supplementary material, *Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Systematic Survey*, prepared for peer review in ACM manuscript format. No LaTeX manuscript or compiled article/supplement PDF is included in this repository ZIP. The validated scientific figure PDFs remain in the separate **manuscript ZIP**. This data archive contains only two additional, author-generated **conceptual figure outputs** (Figures 3 and 7) and their editable source to facilitate standalone inspection and regeneration.
+This **repository-only** package accompanies the separately distributed article and supplementary material, *Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Survey*, prepared in ACM manuscript format for submission to ACM Computing Surveys. No LaTeX manuscript or compiled article/supplement PDF is included in this repository ZIP. The validated scientific figure PDFs remain in the separate **manuscript ZIP**. This data archive contains only two additional, author-generated **conceptual figure outputs** (Figures 3 and 7) and their editable source to facilitate standalone inspection and regeneration.
+
+## Repository identifier and version relationship
+
+**Existing Zenodo deposit (DOI supplied by the authors):** https://doi.org/10.5281/zenodo.24168011
+
+This ZIP is an **updated repository package** aligned with the manuscript title ending in *A Survey*. The DOI above identifies an existing deposit; it should **not** be assumed to contain the present revised ZIP until this package is uploaded as a new version and its Zenodo record has been checked. The figures, scientific datasets, and classification decisions remain unchanged from the repository package used for this editorial update.
+
+**Suggested citation:** San Martín, D., Leger, P., and Vieira de Camargo, V. *Quantum Software Quality: Replication Dataset and Research Artifacts for a Survey*. Zenodo, https://doi.org/10.5281/zenodo.24168011. Use the citation and version displayed in the Zenodo record when citing a specific deposited release.
 
 Start with [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) for a short, command-by-command reproduction guide.
 
@@ -70,4 +78,4 @@ The author-supplied S1–S4 query strings for Scopus and Web of Science are incl
 
 ## Scope and permissions
 
-The separate manuscript archive includes 11 original, scientifically validated PDF figures and the approved researcher-process declaration. This repository archive includes Python figure source where available, but it does not claim standalone regeneration of all 11 PDFs. There is no Qiskit execution requirement. The overall review package remains a private reviewer-draft candidate subject to final release and rights checks. No Zenodo record or DOI has been created; see `ZENODO_RELEASE_CHECKLIST.md`. See `RIGHTS_AND_LIMITATIONS.md` and `REPRODUCIBILITY.md`.
+The separate manuscript archive includes 11 original, scientifically validated PDF figures and the approved researcher-process declaration. This repository archive includes Python figure source where available, but it does not claim standalone regeneration of all 11 PDFs. There is no Qiskit execution requirement. The authors have supplied a DOI for an existing Zenodo deposit (https://doi.org/10.5281/zenodo.24168011). This updated ZIP is a **new local editorial revision**, not evidence that Zenodo already serves these revised bytes. Check rights and coauthor approval before replacing or publishing any files; see `ZENODO_RELEASE_CHECKLIST.md`, `RIGHTS_AND_LIMITATIONS.md`, and `REPRODUCIBILITY.md`.
