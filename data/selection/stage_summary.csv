@@ -1,0 +1,20 @@
+stage,count,interpretation
+Search occurrences (all eight runs),549,Raw occurrences; not unique papers
+Primary occurrences (S1-S3),508,Scopus + Web of Science
+Primary duplicate occurrences,188,188 mapped duplicate occurrences
+Unique primary candidates,320,Before S4
+Supplementary S4 occurrences,41,S4 raw occurrences
+S4 additional cross-database duplicates,15,Occurrences
+S4 unique publications,26,Unique within S4
+S4 overlap with primary candidates,3,Not new unique candidates
+S4 new candidates,23,Added to 320
+Unique candidates after deduplication,343,Stage/TA ID per candidate
+Excluded after title and abstract,87,Final effective TA decision
+Sent forward to full-text evaluation,256,255 TA include + 1 unresolved promoted
+Full texts with eligibility assessed,253,243 included + 10 excluded
+Excluded after full-text evaluation,10,Includes one later approved E8 resolution
+Not found at full-text stage,2,No scientific exclusion decision
+Bibliographic identity issue,1,No scientific exclusion decision
+Selected publication records,243,Not equal to independent studies
+Analytical inventory,242,Different from selection
+Normalized RQ item publications,240,Different from selection

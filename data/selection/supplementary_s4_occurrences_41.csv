@@ -1,0 +1,42 @@
+s4_occurrence_id,database,search,s4_publication_id,extended_corpus_id,relationship,duplicate_of_occurrence_id,duplicate_of_primary_corpus_id,matching_method
+S4SC001,Scopus,S4,S4U001,LC0004,duplicate_of_primary,,LC0004,exact_normalized_title
+S4SC002,Scopus,S4,S4U002,LC0321,s4_unique_representative,,,no_supported_match_to_primary
+S4SC003,Scopus,S4,S4U003,LC0322,s4_unique_representative,,,no_supported_match_to_primary
+S4WO002,Web of Science,S4,S4U003,LC0322,cross_database_duplicate,S4SC003,,exact_normalized_doi_and_title
+S4SC004,Scopus,S4,S4U004,LC0323,s4_unique_representative,,,no_supported_match_to_primary
+S4WO010,Web of Science,S4,S4U004,LC0323,cross_database_duplicate,S4SC004,,exact_normalized_doi_and_title
+S4SC005,Scopus,S4,S4U005,LC0324,s4_unique_representative,,,no_supported_match_to_primary
+S4WO007,Web of Science,S4,S4U005,LC0324,cross_database_duplicate,S4SC005,,exact_normalized_doi_and_title
+S4SC006,Scopus,S4,S4U006,LC0325,s4_unique_representative,,,no_supported_match_to_primary
+S4SC007,Scopus,S4,S4U007,LC0326,s4_unique_representative,,,no_supported_match_to_primary
+S4WO014,Web of Science,S4,S4U007,LC0326,cross_database_duplicate,S4SC007,,exact_normalized_doi_and_title
+S4SC008,Scopus,S4,S4U008,LC0045,duplicate_of_primary,,LC0045,exact_normalized_doi_and_title
+S4WO005,Web of Science,S4,S4U008,LC0045,cross_database_duplicate,S4SC008,,exact_normalized_doi_and_title
+S4SC009,Scopus,S4,S4U009,LC0327,s4_unique_representative,,,no_supported_match_to_primary
+S4WO016,Web of Science,S4,S4U009,LC0327,cross_database_duplicate,S4SC009,,exact_normalized_doi_and_title
+S4SC010,Scopus,S4,S4U010,LC0328,s4_unique_representative,,,no_supported_match_to_primary
+S4WO009,Web of Science,S4,S4U010,LC0328,cross_database_duplicate,S4SC010,,exact_normalized_doi_and_title
+S4SC011,Scopus,S4,S4U011,LC0329,s4_unique_representative,,,no_supported_match_to_primary
+S4WO008,Web of Science,S4,S4U011,LC0329,cross_database_duplicate,S4SC011,,exact_normalized_doi_and_title
+S4SC012,Scopus,S4,S4U012,LC0330,s4_unique_representative,,,no_supported_match_to_primary
+S4SC013,Scopus,S4,S4U013,LC0331,s4_unique_representative,,,no_supported_match_to_primary
+S4WO001,Web of Science,S4,S4U013,LC0331,cross_database_duplicate,S4SC013,,exact_normalized_doi_and_title
+S4SC014,Scopus,S4,S4U014,LC0332,s4_unique_representative,,,no_supported_match_to_primary
+S4SC015,Scopus,S4,S4U015,LC0333,s4_unique_representative,,,no_supported_match_to_primary
+S4WO004,Web of Science,S4,S4U015,LC0333,cross_database_duplicate,S4SC015,,exact_normalized_doi_and_title
+S4SC016,Scopus,S4,S4U016,LC0334,s4_unique_representative,,,no_supported_match_to_primary
+S4WO006,Web of Science,S4,S4U016,LC0334,cross_database_duplicate,S4SC016,,exact_normalized_doi_and_title
+S4SC017,Scopus,S4,S4U017,LC0335,s4_unique_representative,,,no_supported_match_to_primary
+S4WO011,Web of Science,S4,S4U017,LC0335,cross_database_duplicate,S4SC017,,exact_normalized_doi_and_title
+S4SC018,Scopus,S4,S4U018,LC0336,s4_unique_representative,,,no_supported_match_to_primary
+S4SC019,Scopus,S4,S4U019,LC0337,s4_unique_representative,,,no_supported_match_to_primary
+S4WO013,Web of Science,S4,S4U019,LC0337,cross_database_duplicate,S4SC019,,exact_normalized_doi_and_title
+S4SC020,Scopus,S4,S4U020,LC0070,duplicate_of_primary,,LC0070,exact_normalized_doi_and_title
+S4SC021,Scopus,S4,S4U021,LC0338,s4_unique_representative,,,no_supported_match_to_primary
+S4SC022,Scopus,S4,S4U022,LC0339,s4_unique_representative,,,no_supported_match_to_primary
+S4WO015,Web of Science,S4,S4U022,LC0339,cross_database_duplicate,S4SC022,,exact_normalized_doi_and_title
+S4SC023,Scopus,S4,S4U023,LC0340,s4_unique_representative,,,no_supported_match_to_primary
+S4SC024,Scopus,S4,S4U024,LC0341,s4_unique_representative,,,no_supported_match_to_primary
+S4WO012,Web of Science,S4,S4U024,LC0341,cross_database_duplicate,S4SC024,,exact_normalized_title
+S4SC025,Scopus,S4,S4U025,LC0342,s4_unique_representative,,,no_supported_match_to_primary
+S4WO003,Web of Science,S4,S4U026,LC0343,s4_unique_representative,,,no_supported_match_to_primary

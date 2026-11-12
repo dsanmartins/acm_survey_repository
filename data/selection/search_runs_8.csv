@@ -1,0 +1,9 @@
+database,search,stage,recorded_execution_date,date_basis,raw_occurrences,query_file,raw_export_sha256
+Scopus,S1,PRIMARY,2026-09-30,researcher chronology; exact database execution timestamp not independently established,206,search_strings/scopus_s1.txt,8058cdf981fd6031a814c26f0cfe3d76b91e664c17a50511fd3257bef1112609
+Scopus,S2,PRIMARY,2026-09-30,researcher chronology; exact database execution timestamp not independently established,91,search_strings/scopus_s2.txt,ef1b224a711e022dd99b3d9e200fd061d125c4ca2b0657ffcbe7b3083510d5b8
+Scopus,S3,PRIMARY,2026-09-30,researcher chronology; exact database execution timestamp not independently established,50,search_strings/scopus_s3.txt,e273d09269b850e46657fb8059921e6dcfa56aa918161bcb8fbbff79974e18ca
+Scopus,S4,SUPPLEMENTARY,2026-10-01,researcher chronology; Scopus S4 export header corroborates date,25,search_strings/scopus_s4.txt,0521939c353dd49c89f68a834b1e2e2bdb13e839faa9ac73db84b65c30ca8111
+Web of Science,S1,PRIMARY,2026-09-30,researcher chronology; exact database execution timestamp not independently established,83,search_strings/wos_s1.txt,f511539c67d3024a7ada3a1583fedad377e0c9e94b7f7be32760220cd17e535e
+Web of Science,S2,PRIMARY,2026-09-30,researcher chronology; exact database execution timestamp not independently established,57,search_strings/wos_s2.txt,cd251bc4827fac406a0362431cc8737f4838a73d3186fcf1c7d636c026180cc4
+Web of Science,S3,PRIMARY,2026-09-30,researcher chronology; exact database execution timestamp not independently established,21,search_strings/wos_s3.txt,2ee8f39ea908d59645d316fa7bcd3e9f093f89d86640f849404bdcfaba445646
+Web of Science,S4,SUPPLEMENTARY,2026-10-01,researcher chronology; exact database execution timestamp not independently established,16,search_strings/wos_s4.txt,302e7cbcf26662d4b327514d97851be78a21ac1496032d336256e760f9736960

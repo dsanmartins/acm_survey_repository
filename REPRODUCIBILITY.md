@@ -32,3 +32,7 @@ The `search_strings/` directory now contains the eight verbatim S1–S4 queries 
 ## Boundaries
 
 This workflow does not rerun original full-text screening, independently assess the source studies, reproduce the full private research workspace, or execute Qiskit. Historical validation statuses remain distinct from the tests reproduced here. Redistribution remains subject to the documented rights review.
+
+## Study-selection transparency
+
+The historical **effective decisions** of 343 unique candidates can be inspected in `selection_traceability.xlsx` or `data/selection/candidates_343.csv`; search run counts, primary duplicate mappings and S4 occurrences are retained as separate CSVs. This is an archival projection of previously recorded decisions, not a rerun of queries or human reassessment of full texts. Original licensed raw database exports and complete reviewer notes are excluded, so the 549 occurrences and scientific eligibility judgments cannot be independently reconstructed from source documents. A retrospective PRISMA 2020 reporting mapping is provided as `PRISMA_2020_REPORTING.md` and `docs/PRISMA_2020_CROSSWALK.csv`.

@@ -50,3 +50,7 @@ The author-supplied search texts are in `search_strings/scopus_s1.txt` through `
 ## Limits and access
 
 No source-study full texts, licensed database exports, or private reviewer evidence are included. The 11 original PDF figures and manuscript LaTeX sources belong to the **separate manuscript ZIP** and have not been redrawn. Some figure-source scripts require components outside the compact reproduction workflow and are supplied only for inspection. The data package is a private reviewer candidate; public release and a persistent DOI remain separate approval steps. See `RIGHTS_AND_LIMITATIONS.md`.
+
+## Selection traceability and reporting
+
+The repository includes [`selection_traceability.xlsx`](selection_traceability.xlsx) with **343 candidate records** and all documented selection-stage statuses, plus CSV views in `data/selection/`. The selected-publication bibliography supplies titles and DOIs only for the 243 selected records; no metadata are guessed for excluded candidates. The query-to-database mapping and the retrospective PRISMA 2020 crosswalk are in `SEARCH_STRINGS.md` and `PRISMA_2020_REPORTING.md`. Neither reconstructs original licensed database exports or constitutes a prospective PRISMA registration.

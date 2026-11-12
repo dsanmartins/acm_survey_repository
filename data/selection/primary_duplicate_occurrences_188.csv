@@ -1,0 +1,189 @@
+corpus_id,duplicate_record_id,retained_representative_record_id,match_rule,database,search
+LC0005,scopus_s2:0002,scopus_s1:0151,same_database_accession,Scopus,S2
+LC0007,scopus_s2:0076,scopus_s1:0099,same_database_accession,Scopus,S2
+LC0007,scopus_s3:0038,scopus_s1:0099,same_database_accession,Scopus,S3
+LC0008,scopus_s3:0001,scopus_s1:0053,same_database_accession,Scopus,S3
+LC0009,scopus_s3:0009,scopus_s2:0017,same_database_accession,Scopus,S3
+LC0010,scopus_s3:0012,scopus_s2:0028,same_database_accession,Scopus,S3
+LC0017,scopus_s3:0008,scopus_s2:0016,same_database_accession,Scopus,S3
+LC0019,wos_s1:0030,scopus_s1:0015,exact_normalized_doi,Web of Science,S1
+LC0020,wos_s1:0049,scopus_s1:0206,exact_normalized_doi,Web of Science,S1
+LC0024,scopus_s1:0203,scopus_s3:0048,exact_normalized_doi,Scopus,S1
+LC0025,wos_s1:0008,scopus_s1:0109,exact_normalized_doi,Web of Science,S1
+LC0026,wos_s1:0078,scopus_s1:0035,exact_normalized_doi,Web of Science,S1
+LC0028,wos_s1:0029,scopus_s1:0118,exact_normalized_doi,Web of Science,S1
+LC0029,wos_s1:0061,scopus_s1:0004,exact_normalized_doi,Web of Science,S1
+LC0030,wos_s2:0006,scopus_s2:0064,exact_normalized_doi,Web of Science,S2
+LC0033,wos_s2:0039,scopus_s2:0071,exact_normalized_title_year_first_author,Web of Science,S2
+LC0034,scopus_s3:0041,scopus_s2:0081,exact_normalized_doi,Scopus,S3
+LC0034,wos_s2:0041,scopus_s2:0081,exact_normalized_doi,Web of Science,S2
+LC0034,wos_s3:0011,scopus_s2:0081,exact_normalized_doi,Web of Science,S3
+LC0036,wos_s1:0080,scopus_s1:0009,exact_normalized_doi,Web of Science,S1
+LC0037,wos_s2:0057,scopus_s2:0047,exact_normalized_doi,Web of Science,S2
+LC0038,wos_s2:0055,scopus_s2:0087,exact_normalized_doi,Web of Science,S2
+LC0039,scopus_s3:0035,scopus_s2:0067,exact_normalized_doi,Scopus,S3
+LC0039,wos_s2:0016,scopus_s2:0067,exact_normalized_doi,Web of Science,S2
+LC0039,wos_s3:0002,scopus_s2:0067,exact_normalized_doi,Web of Science,S3
+LC0040,wos_s2:0023,scopus_s2:0033,exact_normalized_doi,Web of Science,S2
+LC0042,wos_s2:0052,wos_s1:0070,exact_normalized_doi,Web of Science,S2
+LC0045,wos_s3:0004,scopus_s3:0030,exact_normalized_doi,Web of Science,S3
+LC0047,wos_s1:0023,scopus_s1:0130,exact_normalized_doi,Web of Science,S1
+LC0049,wos_s3:0019,scopus_s3:0017,exact_normalized_doi,Web of Science,S3
+LC0050,wos_s2:0008,scopus_s2:0005,exact_normalized_doi,Web of Science,S2
+LC0053,wos_s1:0011,scopus_s1:0090,exact_normalized_doi,Web of Science,S1
+LC0054,wos_s2:0025,scopus_s2:0024,exact_normalized_doi,Web of Science,S2
+LC0055,wos_s1:0050,scopus_s1:0101,exact_normalized_doi,Web of Science,S1
+LC0056,wos_s1:0026,scopus_s1:0064,exact_normalized_doi,Web of Science,S1
+LC0057,wos_s3:0009,scopus_s3:0034,exact_normalized_doi,Web of Science,S3
+LC0061,scopus_s1:0022,scopus_s3:0024,exact_normalized_doi,Scopus,S1
+LC0061,wos_s3:0008,scopus_s3:0024,exact_normalized_doi,Web of Science,S3
+LC0064,wos_s2:0017,scopus_s2:0027,exact_normalized_doi,Web of Science,S2
+LC0065,wos_s1:0065,scopus_s1:0200,exact_normalized_doi,Web of Science,S1
+LC0066,wos_s1:0043,scopus_s1:0134,exact_normalized_doi,Web of Science,S1
+LC0067,wos_s2:0033,scopus_s2:0065,exact_normalized_doi,Web of Science,S2
+LC0075,wos_s1:0056,scopus_s1:0040,exact_normalized_doi,Web of Science,S1
+LC0077,wos_s1:0052,scopus_s1:0103,exact_normalized_doi,Web of Science,S1
+LC0078,wos_s1:0018,scopus_s1:0043,exact_normalized_doi,Web of Science,S1
+LC0079,wos_s1:0004,scopus_s1:0174,exact_normalized_doi,Web of Science,S1
+LC0081,wos_s1:0013,scopus_s1:0047,exact_normalized_doi,Web of Science,S1
+LC0082,wos_s1:0005,scopus_s1:0026,exact_normalized_doi,Web of Science,S1
+LC0083,wos_s1:0064,scopus_s1:0083,exact_normalized_doi,Web of Science,S1
+LC0084,wos_s2:0051,scopus_s2:0019,exact_normalized_doi,Web of Science,S2
+LC0086,wos_s3:0015,wos_s2:0046,exact_normalized_doi,Web of Science,S3
+LC0088,wos_s1:0079,scopus_s1:0192,exact_normalized_doi,Web of Science,S1
+LC0091,wos_s3:0012,scopus_s3:0042,exact_normalized_doi,Web of Science,S3
+LC0095,wos_s2:0004,scopus_s2:0072,exact_normalized_title_year_first_author,Web of Science,S2
+LC0096,scopus_s1:0197,scopus_s2:0079,exact_normalized_doi,Scopus,S1
+LC0096,wos_s2:0042,scopus_s2:0079,exact_normalized_doi,Web of Science,S2
+LC0099,wos_s3:0020,scopus_s3:0049,exact_normalized_doi,Web of Science,S3
+LC0100,wos_s3:0016,scopus_s3:0014,exact_normalized_doi,Web of Science,S3
+LC0102,wos_s3:0014,scopus_s3:0037,exact_normalized_doi,Web of Science,S3
+LC0103,wos_s2:0054,scopus_s2:0040,exact_normalized_doi,Web of Science,S2
+LC0106,wos_s2:0019,scopus_s2:0003,exact_normalized_doi,Web of Science,S2
+LC0108,wos_s1:0028,scopus_s1:0025,exact_normalized_doi,Web of Science,S1
+LC0111,wos_s1:0009,scopus_s1:0048,exact_normalized_doi,Web of Science,S1
+LC0113,wos_s2:0021,scopus_s2:0018,exact_normalized_doi,Web of Science,S2
+LC0114,wos_s1:0001,scopus_s1:0185,exact_normalized_doi,Web of Science,S1
+LC0115,wos_s2:0030,scopus_s2:0090,exact_normalized_doi,Web of Science,S2
+LC0116,wos_s1:0010,scopus_s1:0199,exact_normalized_doi,Web of Science,S1
+LC0118,wos_s1:0022,scopus_s1:0102,exact_normalized_doi,Web of Science,S1
+LC0119,scopus_s3:0040,scopus_s2:0077,same_database_accession,Scopus,S3
+LC0122,wos_s3:0001,wos_s2:0009,exact_normalized_doi,Web of Science,S3
+LC0123,scopus_s3:0050,scopus_s2:0088,exact_normalized_doi,Scopus,S3
+LC0123,wos_s2:0032,scopus_s2:0088,exact_normalized_doi,Web of Science,S2
+LC0123,wos_s3:0007,scopus_s2:0088,exact_normalized_doi,Web of Science,S3
+LC0125,wos_s1:0035,scopus_s1:0175,exact_normalized_doi,Web of Science,S1
+LC0126,scopus_s3:0006,scopus_s2:0011,exact_normalized_doi,Scopus,S3
+LC0126,wos_s2:0035,scopus_s2:0011,exact_normalized_doi,Web of Science,S2
+LC0126,wos_s3:0010,scopus_s2:0011,exact_normalized_doi,Web of Science,S3
+LC0127,wos_s1:0015,scopus_s1:0039,exact_normalized_doi,Web of Science,S1
+LC0129,wos_s2:0018,scopus_s2:0053,exact_normalized_doi,Web of Science,S2
+LC0132,wos_s1:0076,scopus_s1:0169,exact_normalized_doi,Web of Science,S1
+LC0133,wos_s2:0005,scopus_s2:0030,exact_normalized_doi,Web of Science,S2
+LC0137,wos_s3:0021,scopus_s3:0028,exact_normalized_doi,Web of Science,S3
+LC0138,wos_s2:0045,scopus_s2:0021,exact_normalized_doi,Web of Science,S2
+LC0139,wos_s1:0006,scopus_s1:0144,exact_normalized_doi,Web of Science,S1
+LC0141,wos_s1:0045,scopus_s1:0062,exact_normalized_doi,Web of Science,S1
+LC0142,wos_s2:0013,scopus_s2:0073,exact_normalized_doi,Web of Science,S2
+LC0146,wos_s2:0012,scopus_s2:0058,exact_normalized_doi,Web of Science,S2
+LC0147,scopus_s1:0190,scopus_s2:0068,exact_normalized_doi,Scopus,S1
+LC0147,wos_s1:0021,scopus_s2:0068,exact_normalized_doi,Web of Science,S1
+LC0147,wos_s2:0020,scopus_s2:0068,exact_normalized_doi,Web of Science,S2
+LC0148,wos_s1:0017,scopus_s1:0024,exact_normalized_doi,Web of Science,S1
+LC0149,scopus_s1:0140,scopus_s1:0110,exact_normalized_doi,Scopus,S1
+LC0149,wos_s1:0002,scopus_s1:0110,exact_normalized_doi,Web of Science,S1
+LC0150,wos_s2:0049,scopus_s2:0036,exact_normalized_doi,Web of Science,S2
+LC0151,scopus_s3:0011,scopus_s2:0025,exact_normalized_doi,Scopus,S3
+LC0151,wos_s2:0047,scopus_s2:0025,exact_normalized_doi,Web of Science,S2
+LC0151,wos_s3:0017,scopus_s2:0025,exact_normalized_doi,Web of Science,S3
+LC0152,wos_s1:0069,scopus_s1:0205,exact_normalized_doi,Web of Science,S1
+LC0154,wos_s2:0010,scopus_s2:0001,exact_normalized_doi,Web of Science,S2
+LC0156,wos_s1:0068,scopus_s1:0165,exact_normalized_doi,Web of Science,S1
+LC0157,wos_s2:0028,scopus_s2:0048,exact_normalized_doi,Web of Science,S2
+LC0158,wos_s2:0048,scopus_s2:0061,exact_normalized_doi,Web of Science,S2
+LC0159,wos_s1:0051,scopus_s1:0181,exact_normalized_doi,Web of Science,S1
+LC0162,wos_s1:0077,scopus_s1:0054,exact_normalized_doi,Web of Science,S1
+LC0163,wos_s1:0057,scopus_s1:0060,exact_normalized_doi,Web of Science,S1
+LC0164,wos_s1:0042,scopus_s1:0079,exact_normalized_doi,Web of Science,S1
+LC0166,wos_s2:0022,scopus_s2:0022,exact_normalized_doi,Web of Science,S2
+LC0167,wos_s2:0011,scopus_s2:0038,exact_normalized_doi,Web of Science,S2
+LC0168,wos_s2:0043,scopus_s2:0039,exact_normalized_doi,Web of Science,S2
+LC0170,wos_s2:0026,scopus_s2:0055,exact_normalized_doi,Web of Science,S2
+LC0172,wos_s1:0062,scopus_s1:0031,exact_normalized_doi,Web of Science,S1
+LC0176,wos_s1:0041,scopus_s1:0136,exact_normalized_doi,Web of Science,S1
+LC0177,wos_s1:0033,scopus_s1:0051,exact_normalized_doi,Web of Science,S1
+LC0178,wos_s1:0053,scopus_s1:0131,exact_normalized_doi,Web of Science,S1
+LC0182,wos_s1:0007,scopus_s1:0010,exact_normalized_doi,Web of Science,S1
+LC0183,wos_s1:0003,scopus_s1:0006,exact_normalized_doi,Web of Science,S1
+LC0185,wos_s2:0034,scopus_s2:0045,exact_normalized_doi,Web of Science,S2
+LC0193,wos_s1:0059,scopus_s1:0188,exact_normalized_doi,Web of Science,S1
+LC0196,scopus_s2:0035,scopus_s1:0170,same_database_accession,Scopus,S2
+LC0196,scopus_s3:0019,scopus_s1:0170,same_database_accession,Scopus,S3
+LC0197,scopus_s2:0060,scopus_s1:0183,same_database_accession,Scopus,S2
+LC0197,scopus_s3:0026,scopus_s1:0183,same_database_accession,Scopus,S3
+LC0199,scopus_s2:0029,scopus_s1:0013,same_database_accession,Scopus,S2
+LC0210,scopus_s1:0070,scopus_s3:0015,exact_normalized_doi,Scopus,S1
+LC0211,wos_s1:0048,scopus_s1:0018,exact_normalized_doi,Web of Science,S1
+LC0212,wos_s1:0014,scopus_s1:0088,exact_normalized_doi,Web of Science,S1
+LC0213,wos_s2:0040,scopus_s2:0032,exact_normalized_doi,Web of Science,S2
+LC0216,wos_s2:0015,scopus_s2:0023,exact_normalized_doi,Web of Science,S2
+LC0217,wos_s1:0027,scopus_s1:0017,exact_normalized_doi,Web of Science,S1
+LC0219,wos_s1:0037,scopus_s1:0117,exact_normalized_doi,Web of Science,S1
+LC0220,wos_s2:0024,scopus_s2:0037,exact_normalized_doi,Web of Science,S2
+LC0221,wos_s2:0029,scopus_s2:0069,exact_normalized_doi,Web of Science,S2
+LC0222,scopus_s1:0187,scopus_s3:0029,exact_normalized_doi,Scopus,S1
+LC0222,wos_s1:0058,scopus_s3:0029,exact_normalized_doi,Web of Science,S1
+LC0222,wos_s3:0005,scopus_s3:0029,exact_normalized_doi,Web of Science,S3
+LC0223,scopus_s3:0002,scopus_s2:0007,exact_normalized_doi,Scopus,S3
+LC0224,wos_s1:0082,scopus_s1:0114,exact_normalized_doi,Web of Science,S1
+LC0226,wos_s1:0072,scopus_s1:0193,exact_normalized_doi,Web of Science,S1
+LC0231,wos_s1:0034,scopus_s1:0085,exact_normalized_doi,Web of Science,S1
+LC0237,scopus_s2:0084,scopus_s1:0105,exact_normalized_doi,Scopus,S2
+LC0246,wos_s2:0002,scopus_s2:0043,exact_normalized_doi,Web of Science,S2
+LC0248,wos_s1:0055,scopus_s1:0122,exact_normalized_doi,Web of Science,S1
+LC0249,wos_s1:0047,scopus_s1:0196,exact_normalized_doi,Web of Science,S1
+LC0252,wos_s1:0075,scopus_s1:0111,exact_normalized_doi,Web of Science,S1
+LC0253,wos_s1:0040,scopus_s1:0086,exact_normalized_doi,Web of Science,S1
+LC0255,wos_s1:0067,scopus_s1:0119,exact_normalized_doi,Web of Science,S1
+LC0257,wos_s2:0053,scopus_s2:0050,exact_normalized_doi,Web of Science,S2
+LC0258,wos_s1:0024,scopus_s1:0177,exact_normalized_doi,Web of Science,S1
+LC0259,wos_s2:0014,scopus_s2:0020,exact_normalized_doi,Web of Science,S2
+LC0260,wos_s1:0032,scopus_s1:0155,exact_normalized_doi,Web of Science,S1
+LC0261,wos_s1:0081,scopus_s1:0008,exact_normalized_doi,Web of Science,S1
+LC0262,wos_s1:0031,scopus_s1:0116,exact_normalized_doi,Web of Science,S1
+LC0269,wos_s2:0056,scopus_s2:0034,exact_normalized_doi,Web of Science,S2
+LC0270,wos_s2:0031,scopus_s2:0075,exact_normalized_doi,Web of Science,S2
+LC0271,wos_s2:0036,scopus_s2:0042,exact_normalized_doi,Web of Science,S2
+LC0272,scopus_s1:0154,scopus_s3:0004,exact_normalized_doi,Scopus,S1
+LC0273,scopus_s3:0043,scopus_s2:0082,exact_normalized_doi,Scopus,S3
+LC0274,scopus_s3:0005,scopus_s2:0010,exact_normalized_doi,Scopus,S3
+LC0274,wos_s2:0027,scopus_s2:0010,exact_normalized_doi,Web of Science,S2
+LC0274,wos_s3:0006,scopus_s2:0010,exact_normalized_doi,Web of Science,S3
+LC0275,wos_s1:0036,scopus_s1:0152,exact_normalized_doi,Web of Science,S1
+LC0277,scopus_s1:0141,scopus_s3:0046,exact_normalized_doi,Scopus,S1
+LC0277,wos_s1:0083,scopus_s3:0046,exact_normalized_doi,Web of Science,S1
+LC0277,wos_s3:0013,scopus_s3:0046,exact_normalized_doi,Web of Science,S3
+LC0279,wos_s2:0038,scopus_s2:0052,exact_normalized_doi,Web of Science,S2
+LC0280,wos_s1:0073,scopus_s1:0160,exact_normalized_doi,Web of Science,S1
+LC0281,wos_s1:0020,scopus_s1:0021,exact_normalized_doi,Web of Science,S1
+LC0283,wos_s1:0016,scopus_s1:0100,exact_normalized_doi,Web of Science,S1
+LC0286,wos_s1:0044,scopus_s1:0042,exact_normalized_doi,Web of Science,S1
+LC0288,wos_s1:0039,scopus_s1:0016,exact_normalized_doi,Web of Science,S1
+LC0289,wos_s1:0025,scopus_s1:0063,exact_normalized_doi,Web of Science,S1
+LC0290,scopus_s3:0045,scopus_s2:0086,exact_normalized_doi,Scopus,S3
+LC0291,wos_s1:0060,scopus_s1:0123,exact_normalized_doi,Web of Science,S1
+LC0293,wos_s1:0012,scopus_s1:0186,exact_normalized_doi,Web of Science,S1
+LC0294,wos_s1:0019,scopus_s1:0132,exact_normalized_doi,Web of Science,S1
+LC0298,wos_s1:0071,scopus_s1:0125,exact_normalized_doi,Web of Science,S1
+LC0299,wos_s1:0066,scopus_s1:0071,exact_normalized_doi,Web of Science,S1
+LC0303,wos_s2:0050,scopus_s2:0062,exact_normalized_title_year_first_author,Web of Science,S2
+LC0305,scopus_s1:0002,scopus_s3:0003,exact_normalized_doi,Scopus,S1
+LC0307,wos_s1:0063,scopus_s1:0182,exact_normalized_doi,Web of Science,S1
+LC0308,wos_s2:0001,scopus_s2:0049,exact_normalized_doi,Web of Science,S2
+LC0310,scopus_s1:0178,scopus_s2:0044,exact_normalized_doi,Scopus,S1
+LC0310,wos_s2:0003,scopus_s2:0044,exact_normalized_doi,Web of Science,S2
+LC0312,scopus_s1:0113,scopus_s2:0031,exact_normalized_doi,Scopus,S1
+LC0313,wos_s2:0037,scopus_s2:0066,exact_normalized_doi,Web of Science,S2
+LC0315,wos_s1:0054,scopus_s1:0028,exact_normalized_doi,Web of Science,S1
+LC0319,wos_s3:0018,scopus_s3:0021,exact_normalized_doi,Web of Science,S3
+LC0320,wos_s3:0003,scopus_s3:0025,exact_normalized_doi,Web of Science,S3

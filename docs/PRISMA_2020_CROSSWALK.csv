@@ -1,0 +1,28 @@
+prisma_item,topic,reporting_status,qcc_location,interpretation_or_gap
+1,Title,Reported,main.tex title,Systematic survey title
+2,Abstract,Partially reported,main.tex abstract,91-word journal abstract is not a PRISMA abstract checklist
+3,Rationale,Reported,sections/01_introduction.tex,Problem and scope
+4,Objectives,Reported,sections/03_methodology.tex §3.1,Five explicit research questions
+5,Eligibility criteria,Reported,sections/03_methodology.tex §3.3 Table 2,"I1–I3, E1–E7 plus post hoc E8 documented separately"
+6,Information sources,Partially reported,sections/03_methodology.tex §3.2,Scopus and Web of Science dates reported; full access/subscription filters not recorded
+7,Search strategy,Reported,search_strings/; SEARCH_STRINGS.md,Eight exact database-specific query texts; no raw exports
+8,Selection process,Partially reported,sections/03_methodology.tex §3.3; data/selection/,"Human audits targeted, not complete independent duplicate screening"
+9,Data collection process,Partially reported,sections/03_methodology.tex §3.4,Extraction pilot described; complete independent double extraction not performed
+10,Data items,Reported,§3.1; data/taxonomies/categories.csv,Five RQs and explicit dimensions; not intervention/outcome synthesis
+11,Study risk of bias assessment,Not performed,sections/08_threats.tex §8.3,No formal primary-study quality/risk-of-bias appraisal
+12,Effect measures,Not applicable,§5-7 Results and Synthesis,No pooled comparative effects estimated
+13,Synthesis methods,Partially reported,§3.4; §4-6; companion scripts,Taxonomic counts and interpretive synthesis; no effect-size meta-analysis
+14,Reporting bias assessment,Not performed,sections/08_threats.tex §8.1,No formal missing-results/publication-bias analysis
+15,Certainty assessment,Not performed,sections/08_threats.tex §8.3,No formal GRADE/certainty grading
+16,Study selection,Partially reported,Figure 1; data/selection/stage_summary.csv,Counts explicit; missing metadata of excluded publications and unavailable raw exports
+17,Study characteristics,Partially reported,selected-publication index and Supplement S10,Publication-level metadata; no design-level appraisal
+18,Risk of bias in studies,Not performed,sections/08_threats.tex §8.3,"Not graded, so no risk-of-bias table"
+19,Results of individual studies,Partially reported,§5-6; data/items.csv,"Representative source-grounded comparisons, no standardized effects"
+20,Results of syntheses,Reported,§5-7; Supplement S1–S10,"Category support and qualitative synthesis, not pooled effects"
+21,Reporting biases,Not performed,sections/08_threats.tex §8.1,No systematic assessment of missing-results biases
+22,Certainty of evidence,Not performed,sections/08_threats.tex §8.3,No formal certainty grading
+23,Discussion,Reported,§7-8,"Interpretation, limits, and research directions"
+24,Registration and protocol,Partially reported,§3 methodology; underlying versioned protocol history,No prospective registered PRISMA protocol or public registry ID claimed
+25,Support,Reported,Funding and Competing Interests,No specific funding reported
+26,Competing interests,Reported,Funding and Competing Interests,None reported
+27,"Availability of data, code and other materials",Partially reported,§10; README; REPRODUCIBILITY.md,"Curated data and scripts included, raw licensed exports/private material excluded; no public DOI"

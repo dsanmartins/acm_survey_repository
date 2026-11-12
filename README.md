@@ -1,6 +1,6 @@
 # Quantum Software Quality — Reproducibility repository
 
-This **repository-only** package accompanies the separately distributed article and supplementary material, *Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Systematic Survey*, prepared for peer review in ACM manuscript format. No LaTeX manuscript, compiled article/supplement PDF, or validated figure PDF is included in this repository. 
+This **repository-only** package accompanies the separately distributed article and supplementary material, *Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Systematic Survey*, prepared for peer review in ACM manuscript format. No LaTeX manuscript, compiled article/supplement PDF, or validated figure PDF is included in this repository ZIP. Those assets are provided in the separate **manuscript ZIP**.
 
 Start with [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) for a short, command-by-command reproduction guide.
 
@@ -16,13 +16,15 @@ make reproduce
 - `make verify`: checks the 243/242/240 publication populations, classification results, reference CSVs, and repository file hashes.
 - `make reproduce`: regenerates `coverage.csv`, `category_support.csv`, and `rq2_bubble.csv` under `results/reproduced/` from approved public data. It does not modify the approved classification inputs or run quantum simulations.
 - `make composition`: recalculates descriptive source-document types and page-span availability from the 243-record bibliography. It does **not** classify research designs, grade studies, or merge related publications.
-- The original author-supplied Scopus and Web of Science search texts for S1–S4 are now in [`search_strings/`](search_strings/). Read [`SEARCH_STRINGS.md`](SEARCH_STRINGS.md) before attempting any new database search. The historical 549 search occurrences cannot be regenerated from query text alone.
+- The original author-supplied Scopus and Web of Science search texts for S1–S4 are now in [`search_strings/`](search_strings/). Read [`SEARCH_STRINGS.md`](SEARCH_STRINGS.md) before attempting any new database search. The historical 549 search occurrences cannot be regenerated from query text alone. The repository also contains a historically grounded **343-candidate screening trace** and a retrospective PRISMA reporting crosswalk; see [`SELECTION_TRACEABILITY.md`](SELECTION_TRACEABILITY.md) and [`PRISMA_2020_REPORTING.md`](PRISMA_2020_REPORTING.md).
 - To compile the article and supplement, extract the **manuscript ZIP** and run `bash build_acm.sh` inside its root; it contains the ACM 2.21 class and the original PDF figures.
 
 ## Repository directory map
 
 | Location | Contents | How to use |
 |---|---|---|
+| `selection_traceability.xlsx` and `data/selection/` | Candidate-by-candidate selection decisions (343 IDs), run counts, primary duplicate mapping and S4 occurrences | Review the selection stages; excluded-paper metadata are incomplete, raw database exports remain unavailable |
+| `docs/PRISMA_2020_CROSSWALK.csv` | Retrospective 27-item reporting mapping | Identify reported items, partial coverage, and analyses not performed; not PRISMA certification |
 | `data/selected_publications.csv` and `.xlsx` | Catalogue of 243 selected publications: LC identifier, authors, title, year, venue, DOI, RQ membership and corpus flags | Find a source and its inclusion state |
 | `data/bibliography/publications.csv` | Canonical 243-publication bibliography inventory | Cross-check publication metadata |
 | `data/publication_page_ranges.csv` | Sanitized recorded page ranges for 243 publications | Reproduce the supplementary bibliography-composition table; missing page ranges are explicitly blank |
@@ -36,7 +38,7 @@ make reproduce
 | `results/reproduced/` | Output of `make reproduce` | Inspect recalculated summaries |
 | `results/composition/` | Recalculated document-type and page-span summaries | Check Supplementary Table S10 without treating document types as study-quality ratings |
 | `scripts/` | Reproduction and verification programs | Run read-only/integrity checks |
-| `figure_sources/` | Available Python figure sources, including current reader-facing Figure 1 and illustrative Figure 4 | Inspect or edit scripts; figure generation is outside `make reproduce` and may require assets from the separate manuscript |
+| `figure_sources/` | Available Python figure sources, including unchanged reader-facing Figure 1, illustrative Figure 4, and a new RQ3–RQ5 conceptual map | Inspect or edit scripts; figure generation is outside `make reproduce` and may require assets from the separate manuscript |
 | `search_strings/` | Eight original Scopus/Web of Science text queries (S1–S4) | Review exact author-supplied query wording; database results and historical search logs are not included |
 | `SEARCH_STRINGS.md` | Query-to-database mapping, dates, file hashes, rerun limitations | Follow the search strategy and provenance without treating a contemporary rerun as the historical set |
 | `licenses/` | Included license notices | Inspect applicable terms |
@@ -58,7 +60,7 @@ The repository uses classification states for traceability; those states should 
 5. Decode `category_id` plus `category_version` via `data/taxonomies/categories.csv`.
 6. Run `make reproduce` and compare `results/reproduced/` with `results/reference/`.
 
-A publication can contain multiple items and an item can have several assessment scopes. Category memberships are not independent-study counts. The 243 selected records include 242 in the analytical inventory and 240 with normalized RQ items. This repository reproduces curated analyses, **not** full-text screening or extraction from copyrighted sources.
+A publication can contain multiple items and an item can have several assessment scopes. Category memberships are not independent-study counts. The 243 selected records include 242 in the analytical inventory and 240 with normalized RQ items. The new selection table reproduces the **recorded screening-stage decisions**, but cannot independently reassess the underlying full texts or regenerate licensed database exports. Curated scientific analyses and their aggregate reproduction remain separate tasks.
 
 ## Query texts and current manuscript figure sources
 
@@ -66,4 +68,4 @@ The author-supplied S1–S4 query strings for Scopus and Web of Science are incl
 
 ## Scope and permissions
 
-The separate manuscript archive includes 11 original, scientifically validated PDF figures and the approved researcher-process declaration. This repository archive includes Python figure source where available, but it does not claim standalone regeneration of all 11 PDFs. There is no Qiskit execution requirement. The overall review package remains a private reviewer-draft candidate subject to final release and rights checks. See `RIGHTS_AND_LIMITATIONS.md` and `REPRODUCIBILITY.md`.
+The separate manuscript archive includes 11 original, scientifically validated PDF figures and the approved researcher-process declaration. This repository archive includes Python figure source where available, but it does not claim standalone regeneration of all 11 PDFs. There is no Qiskit execution requirement. The overall review package remains a private reviewer-draft candidate subject to final release and rights checks. No Zenodo record or DOI has been created; see `ZENODO_RELEASE_CHECKLIST.md`. See `RIGHTS_AND_LIMITATIONS.md` and `REPRODUCIBILITY.md`.
