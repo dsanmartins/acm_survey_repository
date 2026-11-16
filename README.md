@@ -18,9 +18,11 @@ With Python 3 installed, open a terminal at the root of this extracted repositor
 
 ```bash
 make verify
+make verify-kappa
 make reproduce
 ```
 
+- `make verify-kappa`: reproduces the original three-category pilot agreement (11/12, Cohen’s kappa 47/59); see [`FULLTEXT_PILOT_AGREEMENT.md`](FULLTEXT_PILOT_AGREEMENT.md).
 - `make verify`: checks the 243/242/240 publication populations, classification results, reference CSVs, and repository file hashes.
 - `make reproduce`: regenerates `coverage.csv`, `category_support.csv`, and `rq2_bubble.csv` under `results/reproduced/` from approved public data. It does not modify the approved classification inputs or run quantum simulations.
 - `make figures-conceptual`: regenerates the **two conceptual illustrations** (Figure 3 for RQ1 and Figure 7 for RQ3–RQ5) using Matplotlib. This is not a reproduction of experimental results or of the original 11 scientific figures.
@@ -33,6 +35,7 @@ make reproduce
 | Location | Contents | How to use |
 |---|---|---|
 | `selection_traceability.xlsx` and `data/selection/` | Candidate-by-candidate selection decisions (343 IDs), run counts, primary duplicate mapping and S4 occurrences | Review the selection stages; excluded-paper metadata are incomplete, raw database exports remain unavailable |
+| `data/methodology/fulltext_pilot_contingency.csv`, `scripts/verify_kappa.py`, `FULLTEXT_PILOT_AGREEMENT.md` | Original aggregate full-text pilot agreement and self-contained verification | Run `make verify-kappa`; does not claim whole-corpus inter-rater reliability |
 | `docs/PRISMA_2020_CROSSWALK.csv` | Retrospective 27-item reporting mapping | Identify reported items, partial coverage, and analyses not performed; not PRISMA certification |
 | `data/selected_publications.csv` and `.xlsx` | Catalogue of 243 selected publications: LC identifier, authors, title, year, venue, DOI, RQ membership and corpus flags | Find a source and its inclusion state |
 | `data/bibliography/publications.csv` | Canonical 243-publication bibliography inventory | Cross-check publication metadata |

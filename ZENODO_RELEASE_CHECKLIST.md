@@ -21,3 +21,10 @@
 - Publication date and Zenodo license metadata: **not verified here**.
 - New version corresponding exactly to this revised ZIP: **not yet published or independently confirmed**.
 - Scientific results and figure content: **unchanged by this editorial update**.
+
+## Pilot agreement addition (2026-11-16)
+
+- This local revision includes the aggregated 12-record full-text pilot matrix and a standalone verification script (`make verify-kappa`).
+- `make verify` now also checks the pilot. The missing `.gitignore` required by the earlier manifest has been restored in the ZIP.
+- Check the actual deposited Zenodo version before claiming the DOI points to this update; obtain coauthor approval and confirm license/rights scope first.
+- Neither the scientific corpus nor its classifications are changed.
