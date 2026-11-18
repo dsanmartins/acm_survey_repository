@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+type: dataset
+title: "Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Survey"
+message: "Proposed unpublished version. CC BY 4.0 covers original contributions identified in LICENSE_MATRIX.csv; code retains MIT and component exceptions apply. Authorized institutional research access is declared; applicable contractual redistribution conditions remain unverified, with no prohibition established. Complete candidate remains unpublished pending documentary closure. Historical DOI 10.5281/zenodo.24168011 identifies an earlier deposit, not this candidate."
+version: "2.0.0"
+repository-code: "https://github.com/dsanmartins/acm_survey_repository"
+authors:
+  - family-names: "San Martín"
+    given-names: "Daniel"
+    orcid: "https://orcid.org/0000-0001-5274-0148"
+    affiliation: "Universidad Católica del Norte, Chile"
+  - family-names: "Leger"
+    given-names: "Paul"
+    orcid: "https://orcid.org/0000-0003-0969-5139"
+    affiliation: "Universidad Católica del Norte, Chile"
+  - family-names: "Vieira de Camargo"
+    given-names: "Valter"
+    orcid: "https://orcid.org/0000-0002-6439-4649"
+    affiliation: "Universidade Federal de São Carlos, Brazil"
+license: "CC-BY-4.0"

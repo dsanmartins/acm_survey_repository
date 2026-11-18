@@ -54,6 +54,10 @@ def run(check=False):
         *[(k,states[k]) for k in ['page_span_recorded','page_span_6_or_fewer','page_span_over_6','page_span_unavailable']],
     ]
     assert dict(summary)=={'selected_publication_records':243,'analytical_publication_records':242,'item_bearing_publication_records':240,'page_span_recorded':189,'page_span_6_or_fewer':59,'page_span_over_6':130,'page_span_unavailable':54}
+    groups=read('data/evidence_groups.csv')
+    summary.extend([('selected_evidence_groups',len(groups)),('analytical_evidence_groups',sum(r['analytical']=='YES' for r in groups)),('item_bearing_evidence_groups',sum(r['has_items']=='YES' for r in groups))])
+    expected=json.loads((R/'data/provenance/reference_totals.json').read_text())['summary']
+    assert all(dict(summary)[k]==expected[k] for k in ['selected_evidence_groups','analytical_evidence_groups','item_bearing_evidence_groups'])
     outputs={
       'results/composition/document_types.csv':(['source_document_type','selected_publication_records'],types),
       'results/composition/composition_summary.csv':(['metric','value'],[{'metric':k,'value':v} for k,v in summary]),
@@ -63,7 +67,7 @@ def run(check=False):
             with (R/name).open(newline='',encoding='utf-8') as fh:old=list(csv.DictReader(fh))
             if old!=[{k:str(r[k]) for k in fields} for r in rows]:raise SystemExit('FAIL: '+name+' mismatch')
         else: write(name,fields,rows)
-    print('PASS: composition of 243 records; 159/71/9/3/1 document types; 189 page spans, 59 <=6, 54 unavailable')
+    print('PASS: bibliographic composition remains 243 records; consolidated denominators 242/241/239 are recorded separately.')
     print('WARNING: metadata cannot establish secondary-study counts, empirical quality, or study independence')
 
 if __name__=='__main__':

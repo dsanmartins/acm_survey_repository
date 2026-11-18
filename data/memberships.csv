@@ -1835,13 +1835,6 @@ RQ2,LC0173,LC0173-RQ2-002,LC0173-RQ2-002::analysis_mode,analysis_mode,SYN-RQ2-C0
 RQ2,LC0173,LC0173-RQ2-002,LC0173-RQ2-002::technique_family,technique_family,SYN-RQ2-C0005,SA01-staging-definition-2
 RQ4,LC0173,LC0173-RQ4-001,LC0173-RQ4-001::checkability_status,checkability_status,SYN-RQ4-C0018,SA01-staging-definition-1
 RQ4,LC0173,LC0173-RQ4-001,LC0173-RQ4-001::constraint_content_domain,constraint_content_domain,SYN-RQ4-C0008,SA01-staging-definition-1
-RQ1,LC0174,LC0174-RQ1-001,LC0174-RQ1-001::evidence_nature,evidence_nature,SYN-RQ1-C0004,SA01-staging-definition-1
-RQ2,LC0174,LC0174-RQ2-001,LC0174-RQ2-001::analysis_mode,analysis_mode,SYN-RQ2-C0011,SA01-staging-definition-1
-RQ2,LC0174,LC0174-RQ2-001,LC0174-RQ2-001::technique_family,technique_family,SYN-RQ2-C0004,SA01-staging-definition-1
-RQ2,LC0174,LC0174-RQ2-002,LC0174-RQ2-002::analysis_mode,analysis_mode,SYN-RQ2-C0011,SA01-staging-definition-1
-RQ2,LC0174,LC0174-RQ2-002,LC0174-RQ2-002::technique_family,technique_family,SYN-RQ2-C0005,SA01-staging-definition-2
-RQ4,LC0174,LC0174-RQ4-001,LC0174-RQ4-001::checkability_status,checkability_status,SYN-RQ4-C0018,SA01-staging-definition-1
-RQ4,LC0174,LC0174-RQ4-001,LC0174-RQ4-001::constraint_content_domain,constraint_content_domain,SYN-RQ4-C0008,SA01-staging-definition-1
 RQ1,LC0175,LC0175-RQ1-001,LC0175-RQ1-001::affected_artifact,affected_artifact,SYN-RQ1-C0012,SA01-staging-definition-1
 RQ1,LC0175,LC0175-RQ1-001,LC0175-RQ1-001::affected_artifact,affected_artifact,SYN-RQ1-C0014,SA01-staging-definition-1
 RQ1,LC0175,LC0175-RQ1-001,LC0175-RQ1-001::affected_artifact,affected_artifact,SYN-RQ1-C0015,SA01-staging-definition-1

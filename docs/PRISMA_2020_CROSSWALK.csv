@@ -6,7 +6,7 @@ prisma_item,topic,reporting_status,qcc_location,interpretation_or_gap
 5,Eligibility criteria,Reported,sections/03_methodology.tex §3.3 Table 2,"I1–I3, E1–E7 plus post hoc E8 documented separately"
 6,Information sources,Partially reported,sections/03_methodology.tex §3.2,Scopus and Web of Science dates reported; full access/subscription filters not recorded
 7,Search strategy,Reported,search_strings/; SEARCH_STRINGS.md,Eight exact database-specific query texts; no raw exports
-8,Selection process,Partially reported,sections/03_methodology.tex §3.3; data/selection/,"Human audits targeted, not complete independent duplicate screening"
+8,Selection process,Partially reported,sections/03_methodology.tex §3.3; data/selection/,"Initial assessments automated; targeted review of 40 records, historical 33 agreements and seven reconciliations; original individual human annotations unavailable; no complete independent duplicate screening."
 9,Data collection process,Partially reported,sections/03_methodology.tex §3.4,Extraction pilot described; complete independent double extraction not performed
 10,Data items,Reported,§3.1; data/taxonomies/categories.csv,Five RQs and explicit dimensions; not intervention/outcome synthesis
 11,Study risk of bias assessment,Not performed,sections/08_threats.tex §8.3,No formal primary-study quality/risk-of-bias appraisal

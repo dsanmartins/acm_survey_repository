@@ -1,0 +1,16 @@
+family_id,family_label,family_version,Unit,Integration,System,cell_status,aggregation,provenance
+SYN-RQ2-C0001,Static analysis and linting,SA01-staging-definition-2,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0002,Formal verification and symbolic reasoning,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0003,Assertion- and statistical-oracle-based validation,SA01-staging-definition-2,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0004,Relational and property-based testing,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0005,"Test generation, selection, and guided exploration",SA01-staging-definition-2,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0006,Mutation-based assessment,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0007,Debugging and fault localization,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0008,Model-based testing,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0009,Dynamic analysis and monitoring,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0015,Coverage adequacy criteria without generation feedback,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0016,Input-state partition and selection criteria,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0017,Learned noise-aware oracle support,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0018,Source-to-model correspondence checking,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0019,Bug reproduction and fix-validation workflow,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv
+SYN-RQ2-C0020,Truth-table component functionality validation,SA01-staging-definition-1,,,,NOT_MAPPED,distinct paper_id per same-item association,rq2_publication_support_by_cell.csv; source_association_snapshot.csv

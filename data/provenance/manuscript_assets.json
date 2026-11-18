@@ -1,0 +1,51 @@
+{
+  "policy": "Eleven original scientific PDFs remain in the separate manuscript source package; not included here.",
+  "original_scientific_pdfs": {
+    "circuit_illustration.pdf": {
+      "bytes": 23978,
+      "sha256": "f17d223e53313a6834e4ddf60a476b2cc5fb83eb4b4437cce990dc099dbe376c"
+    },
+    "integrated_taxonomy.pdf": {
+      "bytes": 25886,
+      "sha256": "cc761598b05629d7ed56e8bf8a6073a9ed6ed592afb82a032d06eb9047c0d43c"
+    },
+    "rq2_bubble.pdf": {
+      "bytes": 18668,
+      "sha256": "5bea1180d362345e98b78d31b8fa59fe097b936596d998c70872c3b57f3b18ad"
+    },
+    "rq2_test_levels.pdf": {
+      "bytes": 9284,
+      "sha256": "b577c0f37a5865835159c7dad8d075fff0e210237e6652fd92845bc23aee10a0"
+    },
+    "study_selection.pdf": {
+      "bytes": 27615,
+      "sha256": "427522a90bc336445ec6bdc6f2241dab4ff6b1b487d86d25b14a251d4a4170f0"
+    },
+    "taxonomy_rq1.pdf": {
+      "bytes": 25919,
+      "sha256": "1e62995ee2673eac4336deb8c2a6778911adb3c2c9fbbf93827e26eeef63daf3"
+    },
+    "taxonomy_rq1_page2.pdf": {
+      "bytes": 26527,
+      "sha256": "b0d81a020d84b52bc33a088e216667cd8a04118046402f317613d264f05bb493"
+    },
+    "taxonomy_rq2.pdf": {
+      "bytes": 27000,
+      "sha256": "b652256cf3b1cf7d9f95607f2a837c3cc56d4b09e6bbfaadec1c20a7447cd5f0"
+    },
+    "taxonomy_rq3.pdf": {
+      "bytes": 25820,
+      "sha256": "936ff039822da8f00fade244aeb4f3f121ecaba5eb99b23b5f1a8fd956bf69a4"
+    },
+    "taxonomy_rq4.pdf": {
+      "bytes": 26361,
+      "sha256": "cd071bcba5e54c5006bc930e08d78f8384a14e9cf45ad104f328d6d2d807ebf5"
+    },
+    "taxonomy_rq5.pdf": {
+      "bytes": 25569,
+      "sha256": "37c880f045173fce9b523cef552b5b000edc6acb3005d0957c587ac1f274e78b"
+    }
+  },
+  "approved_main_pdf_sha256": "1d229e2280b7a4cecae21dda31b0f61123c62d6f83e423da75cf6d9d13e91c3d",
+  "approved_supplement_pdf_sha256": "6f7cfb68acdba96889a898c0c354d589b23f1a4da54800ec3d2b81710ef2c25c"
+}

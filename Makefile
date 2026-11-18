@@ -1,18 +1,20 @@
-.PHONY: verify verify-kappa reproduce composition figures-conceptual help
+PYTHON ?= python3
+export PYTHONDONTWRITEBYTECODE := 1
+.PHONY: verify verify-kappa reproduce composition figures-conceptual figures-public help
 help:
-	@printf '%s\n' 'make verify       Check publication totals, scientific outputs, and integrity hashes' 'make verify-kappa  Reproduce the historical 12-record pilot agreement' 'make reproduce    Regenerate the three analysis CSVs' 'make composition  Reproduce source-document type and page-span summaries' 'make figures-conceptual  Regenerate the two source-grounded conceptual illustrations (requires Matplotlib)'
+	@printf '%s\n' 'make verify          Verify hashes, scientific identities and numerical references' 'make verify-kappa    Reproduce the historical researcher–automated pilot' 'make reproduce       Reproduce four consolidated analysis CSVs' 'make composition     Describe bibliographic records and evidence-group denominators' 'make figures-public  Regenerate Figures 3, 5 and 6 (Matplotlib required)'
 verify:
-	python3 scripts/analyze_corpus_composition.py --check
-	python3 scripts/reproduce_analysis.py --check
-	python3 scripts/verify_repository.py
-	python3 scripts/verify_kappa.py
+	$(PYTHON) -B scripts/reproduce_analysis.py --check
+	$(PYTHON) -B scripts/analyze_corpus_composition.py --check
+	$(PYTHON) -B scripts/verify_kappa.py
+	$(PYTHON) -B scripts/verify_repository.py
 verify-kappa:
-	python3 scripts/verify_kappa.py
+	$(PYTHON) -B scripts/verify_kappa.py
 reproduce:
-	python3 scripts/reproduce_analysis.py
-
+	$(PYTHON) -B scripts/reproduce_analysis.py
 composition:
-	python3 scripts/analyze_corpus_composition.py
-
+	$(PYTHON) -B scripts/analyze_corpus_composition.py
 figures-conceptual:
-	python3 figure_sources/conceptual_maps.py
+	$(PYTHON) -B scripts/regenerate_public_figures.py --conceptual-only
+figures-public:
+	$(PYTHON) -B scripts/regenerate_public_figures.py

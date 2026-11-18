@@ -1,18 +1,25 @@
-# Dataset guide
+# Data dictionary and counting units
 
-The source tables are **not independent study counts**. A publication can have multiple extracted items; each item can have several category-assessment scopes; an approved scope can have multiple category memberships.
+| File | Meaning and keys |
+|---|---|
+| `selected_publications.csv`, `bibliography/publications.csv` | Identical sanitized 243-record bibliographic index. `paper_id` is a publication record, not an assertion of independent study identity. Flags describe the historical bibliographic cohorts. |
+| `bibliography/metadata_status.csv` | Existing identity/container verification statuses from the approved bibliography. LC0161's DOI/identity is confirmed, but its container title and year remain recorded local metadata rather than independently established by its chapter PDF. |
+| `evidence_groups.csv` | 242 representative groups, explicit bibliographic manifestations, analytical/item-bearing flags and no independence assertion. |
+| `bibliographic_to_evidence.csv` | One row per selected record, representative ID, DOI and manifestation role. Both MorphQ++ DOI remain. |
+| `items.csv` | 1,554 counted extracted units: exact item ID, representative paper, RQ, evidence locator and original source-row SHA-256. |
+| `item_correspondence.csv` | Historical original item IDs to counted representative IDs. Four alternative-manifestation items are aliases, not additional counted observations. |
+| `scope_correspondence.csv` | Alternative/representative scope states and approved sets for the consolidated pair, preserving their differences without transferring assignments. |
+| `scopes.csv` | 5,492 item–axis opportunities. `scope_id = item_id::axis`; state, approved set, authority and completion basis remain those of the selected canonical rows. |
+| `memberships.csv` | 3,700 approved positive assignments to exact category/version, joined by scope and item. Multiple memberships are permitted where supported. |
+| `taxonomies/categories.csv` | Unchanged 86-category registry, with historical IDs, versions and definitions. |
+| `taxonomies/operational_definitions_22.csv` | Approved explanatory text: category name, definition, inclusion and exclusion/limits, with the existing ID for joining. No category or membership is added. |
+| `rq5_pairing_proposals.csv` | 58 undecided, unapplied proposals. Stored references or co-occurrence are not approved links. |
+| `rq2_family_level_not_mapped.csv` | 15 families × three test levels. All 45 entries remain blank and NOT_MAPPED, not numerical zero. |
+| `selection/candidates_343.csv` | Original/final title–abstract and historical/effective full-text decisions, eligibility codes and terminal selection stage. Missing nonselected metadata remain blank. |
+| `publication_page_ranges.csv` | Sanitized recorded inclusive page ranges; blank means no usable recorded span. |
+| `methodology/fulltext_pilot_contingency.csv` | Aggregate initial automated rows versus researcher columns for 12 historical records. No individual reviewer annotations. |
+| `provenance/reference_totals.json` | Current approved bibliographic/group totals, per-RQ denominators and pending-state contracts. |
 
-| File | Row count | Primary key or join | Notes |
-|---|---:|---|---|
-| `data/selected_publications.csv` | 243 | `paper_id` | Title, authors, year, venue, DOI, document type, selection flags, RQ membership |
-| `data/items.csv` | 1,558 | `item_id` | Join to publication through `paper_id` |
-| `data/scopes.csv` | 5,506 | `scope_id` | Includes `scientific_state` and `approved_set_json`; incomplete is not negative |
-| `data/memberships.csv` | 3,707 | (`scope_id`, `category_id`, `category_version`) | Only approved positive memberships |
-| `data/taxonomies/categories.csv` | 86 | (`category_id`, `category_version`) | Versioned meaning of each category |
-| `data/rq5_pairing_proposals.csv` | 58 | source-defined pairing identifier | All undecided; not approved operationalization links |
+`APPROVED_POSITIVE` has the exact registered set of positive memberships. `APPROVED_SCOPED_NONPOSITIVE` is a resolved absence of category fit within the assessed axis. `INCOMPLETE` and `CONTEXT_PROPOSAL_UNAPPLIED` remain unresolved; blank approved-set fields do not imply a negative finding. NR, NA and unclear judgments retain distinct meanings in the category definitions.
 
-Bibliographic fields are carried from the approved selected-publication index; missing fields are preserved rather than fabricated. The classification values and evidence locators are not translated or recoded. A repeated `paper_id` across several RQ results is expected. The source inventory has 243 selected records, while downstream analytical coverage is 242, and 240 records have normalized items.
-
-## Source-document composition (descriptive only)
-
-`data/publication_page_ranges.csv` adds a `bibliographic_page_range` field to each of the 243 selected record IDs. A range `a-b` is measured inclusively as `b-a+1`; an empty field means no usable numeric range is available from the retained bibliographic metadata. `make composition` reproduces `results/composition/document_types.csv` and `results/composition/composition_summary.csv`. `publication_type` is the recorded document type, not an independently appraised primary/secondary study classification. No quality scores, family-merged study counts, or empirical maturity rankings are inferred.
+Coverage/category-support CSVs use evidence groups, items and scopes, with explicit denominators; their RQ populations overlap and must not be summed into a selection count. Figure 4 joins family and mode on the identical item. Bibliographic record counts in composition tables retain a denominator of 243. Observation of a quality problem, repository provenance and its classification are separate descriptors and may coexist when supported.

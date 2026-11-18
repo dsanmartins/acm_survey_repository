@@ -1,84 +1,65 @@
-# Quantum Software Quality — Reproducibility repository
+# Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Survey
 
-This **repository-only** package accompanies the separately distributed article and supplementary material, *Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Survey*, prepared in ACM manuscript format for submission to ACM Computing Surveys. No LaTeX manuscript or compiled article/supplement PDF is included in this repository ZIP. The validated scientific figure PDFs remain in the separate **manuscript ZIP**. This data archive contains only two additional, author-generated **conceptual figure outputs** (Figures 3 and 7) and their editable source to facilitate standalone inspection and regeneration.
+This is the updated existing reproduction package for the approved survey. It retains the original repository structure and scientific identifiers. It is a local release candidate, **2.0.0 (proposed)**, not a new publication or a new scientific repository.
 
-## Repository identifier and version relationship
+## Start here
 
-**Existing Zenodo deposit (DOI supplied by the authors):** https://doi.org/10.5281/zenodo.24168011
+From the extracted `acm_survey_repository/` directory, with Python 3 and Make:
 
-This ZIP is an **updated repository package** aligned with the manuscript title ending in *A Survey*. The DOI above identifies an existing deposit; it should **not** be assumed to contain the present revised ZIP until this package is uploaded as a new version and its Zenodo record has been checked. The figures, scientific datasets, and classification decisions remain unchanged from the repository package used for this editorial update.
-
-**Suggested citation:** San Martín, D., Leger, P., and Vieira de Camargo, V. *Quantum Software Quality: Replication Dataset and Research Artifacts for a Survey*. Zenodo, https://doi.org/10.5281/zenodo.24168011. Use the citation and version displayed in the Zenodo record when citing a specific deposited release.
-
-Start with [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) for a short, command-by-command reproduction guide.
-
-## Quick start
-
-With Python 3 installed, open a terminal at the root of this extracted repository:
-
-```bash
+```sh
 make verify
 make verify-kappa
 make reproduce
+make composition
 ```
 
-- `make verify-kappa`: reproduces the original three-category pilot agreement (11/12, Cohen’s kappa 47/59); see [`FULLTEXT_PILOT_AGREEMENT.md`](FULLTEXT_PILOT_AGREEMENT.md).
-- `make verify`: checks the 243/242/240 publication populations, classification results, reference CSVs, and repository file hashes.
-- `make reproduce`: regenerates `coverage.csv`, `category_support.csv`, and `rq2_bubble.csv` under `results/reproduced/` from approved public data. It does not modify the approved classification inputs or run quantum simulations.
-- `make figures-conceptual`: regenerates the **two conceptual illustrations** (Figure 3 for RQ1 and Figure 7 for RQ3–RQ5) using Matplotlib. This is not a reproduction of experimental results or of the original 11 scientific figures.
-- `make composition`: recalculates descriptive source-document types and page-span availability from the 243-record bibliography. It does **not** classify research designs, grade studies, or merge related publications.
-- The original author-supplied Scopus and Web of Science search texts for S1–S4 are now in [`search_strings/`](search_strings/). Read [`SEARCH_STRINGS.md`](SEARCH_STRINGS.md) before attempting any new database search. The historical 549 search occurrences cannot be regenerated from query text alone. The repository also contains a historically grounded **343-candidate screening trace** and a retrospective PRISMA reporting crosswalk; see [`SELECTION_TRACEABILITY.md`](SELECTION_TRACEABILITY.md) and [`PRISMA_2020_REPORTING.md`](PRISMA_2020_REPORTING.md).
-- To compile the article and supplement, extract the **manuscript ZIP** and run `bash build_acm.sh` inside its root; it contains the ACM 2.21 class and the original PDF figures.
+These four commands require only the Python standard library. They use files inside this package, without the development repository, private records, database subscriptions or network access. `make verify` checks the complete file manifest, record identities, classification relations and byte-for-byte numerical reproduction.
 
-## Repository directory map
+## Counting units
 
-| Location | Contents | How to use |
-|---|---|---|
-| `selection_traceability.xlsx` and `data/selection/` | Candidate-by-candidate selection decisions (343 IDs), run counts, primary duplicate mapping and S4 occurrences | Review the selection stages; excluded-paper metadata are incomplete, raw database exports remain unavailable |
-| `data/methodology/fulltext_pilot_contingency.csv`, `scripts/verify_kappa.py`, `FULLTEXT_PILOT_AGREEMENT.md` | Original aggregate full-text pilot agreement and self-contained verification | Run `make verify-kappa`; does not claim whole-corpus inter-rater reliability |
-| `docs/PRISMA_2020_CROSSWALK.csv` | Retrospective 27-item reporting mapping | Identify reported items, partial coverage, and analyses not performed; not PRISMA certification |
-| `data/selected_publications.csv` and `.xlsx` | Catalogue of 243 selected publications: LC identifier, authors, title, year, venue, DOI, RQ membership and corpus flags | Find a source and its inclusion state |
-| `data/bibliography/publications.csv` | Canonical 243-publication bibliography inventory | Cross-check publication metadata |
-| `data/publication_page_ranges.csv` | Sanitized recorded page ranges for 243 publications | Reproduce the supplementary bibliography-composition table; missing page ranges are explicitly blank |
-| `data/items.csv` | 1,558 extracted RQ items | Join `paper_id` from catalogue to `item_id` |
-| `data/scopes.csv` | 5,506 classification scopes and approval states | Inspect evidence-backed positive/empty and incomplete states |
-| `data/memberships.csv` | 3,707 approved positive category memberships | Join using `scope_id` |
-| `data/taxonomies/categories.csv` | 86 versioned definitions | Interpret category identifiers |
-| `data/rq5_pairing_proposals.csv` | 58 undecided proposed pairings | Confirm none is promoted to an approved link |
-| `data/provenance/` | Frozen aggregate reference totals | Check the documented scientific inventory |
-| `results/reference/` | Approved expected summary CSVs | Compare reproduced results |
-| `results/reproduced/` | Output of `make reproduce` | Inspect recalculated summaries |
-| `results/composition/` | Recalculated document-type and page-span summaries | Check Supplementary Table S10 without treating document types as study-quality ratings |
-| `scripts/` | Reproduction and verification programs | Run read-only/integrity checks |
-| `figure_sources/` | Available Python figure sources, including unchanged reader-facing Figure 1, illustrative Figure 5, and current concept maps for Figures 3 and 7 | Inspect or edit scripts; figure generation is outside `make reproduce` and may require assets from the separate manuscript |
-| `figures/` | Approved illustrative conceptual maps for RQ1 (Figure 3) and RQ3–RQ5 (Figure 7) in PDF and PNG; other validated figures remain in the manuscript ZIP | `make figures-conceptual` regenerates both via Matplotlib |
-| `search_strings/` | Eight original Scopus/Web of Science text queries (S1–S4) | Review exact author-supplied query wording; database results and historical search logs are not included |
-| `SEARCH_STRINGS.md` | Query-to-database mapping, dates, file hashes, rerun limitations | Follow the search strategy and provenance without treating a contemporary rerun as the historical set |
-| `licenses/` | Included license notices | Inspect applicable terms |
+| Unit | Count |
+|---|---:|
+| Selected bibliographic records | 243 |
+| Selected consolidated evidence groups | 242 |
+| Groups with analytical records | 241 |
+| Groups with normalized items | 239 |
+| Extracted items / classification scopes / positive memberships | 1,554 / 5,492 / 3,700 |
+| Existing categories | 86 |
+| Figure 4 same-item family–mode cells / associated items | 28 / 381 |
+| Undecided RQ5 pairings / unmapped family–level cells | 58 / 45 |
 
-## Link to the manuscript tables
+LC0173 and LC0174 are bibliographic manifestations of the same documented MorphQ++ study. Both remain selected, with both DOI. LC0173 represents their scientific evidence; LC0174 is an alternative manifestation. This is not an eligibility exclusion and does not establish independence of the other groups. The historical bibliographic flags still describe **243/242/240 publication records**; the consolidated scientific denominators are **242/241/239 groups**.
 
-In the current article, **Table 2** gives study eligibility criteria and rationales, and **Table 3** summarizes the scientific findings and limits of RQ1--RQ5. Detailed audit counts have been moved to **Supplementary Table S8**. These counts can be checked directly against `results/reference/coverage.csv` and reproduced with `make reproduce`. Supporting publication and item counts for the reported categories are in `results/reference/category_support.csv`. The 28 same-item technique-family/analysis-mode cells underlying Figure 4 can be checked in `results/reference/rq2_bubble.csv`.
+## Files and scientific traceability
 
-The supplementary **Table S10** summarizes source-document types and available page spans using `make composition`. It does not estimate the number of independent studies or risk of bias. Candidate publication families, identified through metadata similarities, have not been scientifically adjudicated and are not consolidated into the corpus.
+- `data/selected_publications.csv` and `data/bibliography/publications.csv`: the same sanitized 243-record catalogue; XLSX is a view of those public cells.
+- `data/bibliography/metadata_status.csv`: source-specific identity/container verification status. Recorded local metadata are not automatically independently confirmed bibliographic facts; LC0161 retains a container-title limitation.
+- `data/selection/` and `selection_traceability.xlsx`: recorded selection decisions for 343 candidates, with metadata for selected records only. No missing identities are invented.
+- `data/evidence_groups.csv`, `bibliographic_to_evidence.csv`, `item_correspondence.csv` and `scope_correspondence.csv`: explicit manifestation/group and item correspondence, retaining historical IDs and the original classification differences without transferring memberships.
+- `data/items.csv`, `scopes.csv` and `memberships.csv`: the approved consolidated view. A `paper_id` identifies its representative publication; joins are through exact item/scope/category/version identifiers.
+- `data/taxonomies/categories.csv`: the unchanged 86-category registry. The 22 approved explanatory definitions are in `operational_definitions_22.csv` and `docs/operational_category_definitions.tex`; they create no category or reclassification.
+- `results/reference/` and `results/reproduced/`: coverage, category support, same-item Figure 4 cells and per-axis coverage. The files reproduce the approved numerical sources exactly.
 
-The repository uses classification states for traceability; those states should not be interpreted as scientific findings about the absence of defects or mechanisms. Classification inputs and researcher decisions have not been changed by the editorial restructuring.
+Read [DATA_DICTIONARY.md](DATA_DICTIONARY.md), [METHODOLOGY.md](METHODOLOGY.md) and [docs/CATEGORY_DEFINITIONS.md](docs/CATEGORY_DEFINITIONS.md). Blank, incomplete, scoped nonpositive and unreported states have different meanings; none should be converted into an unobserved scientific result.
 
-## How to trace a publication and classification
+## Tables and figures
 
-1. Locate an identifier such as `LC0297` in `data/selected_publications.csv`.
-2. Find related records by `paper_id` in `data/items.csv`.
-3. Join `item_id` to `data/scopes.csv` and inspect axis-level decisions.
-4. Join approved positive `scope_id` values to `data/memberships.csv`.
-5. Decode `category_id` plus `category_version` via `data/taxonomies/categories.csv`.
-6. Run `make reproduce` and compare `results/reproduced/` with `results/reference/`.
+Coverage and category support underpin the main and supplemental result tables, including S1, S2, S4 and S8. Figure 4 is reconstructed numerically in `results/reproduced/rq2_bubble.csv`, including all 28 cells and their exact 381 item identities. Family–level associations remain unmapped; their 45 blank cells are not observed zeroes.
 
-A publication can contain multiple items and an item can have several assessment scopes. Category memberships are not independent-study counts. The 243 selected records include 242 in the analytical inventory and 240 with normalized RQ items. The new selection table reproduces the **recorded screening-stage decisions**, but cannot independently reassess the underlying full texts or regenerate licensed database exports. Curated scientific analyses and their aggregate reproduction remain separate tasks.
+The article has **six** main figures. The representation–condition–model-level map is **Figure 6**. See [FIGURE_UPDATE.md](FIGURE_UPDATE.md) for the complete mapping and generation scope. Optional `make figures-public` regenerates the author-created Figures 3, 5 and 6 using Matplotlib. The original nine figure scripts are preserved; approved newer versions are supplied separately, with their dependencies declared. Their historical filenames do not determine current numbering.
 
-## Query texts and current manuscript figure sources
+The eleven original scientific PDF figures remain in the separately supplied manuscript sources, not this repository ZIP. This package does not claim standalone compilation of the manuscript or regeneration of all original PDFs. Numerical reproduction, figure generation, LaTeX compilation and PDF binary identity are separate checks.
 
-The author-supplied S1–S4 query strings for Scopus and Web of Science are included under `search_strings/` (see `SEARCH_STRINGS.md` for source-archive provenance). The current manuscript introduces a compact, illustrative seven-field diagram as Figure 5; its editable source is `figure_sources/assurance_reporting_schema.py`. The cleaned selection flow of Figure 1 uses `figure_sources/study_selection_clean.py`, which requires the authoritative source diagram **from the separate manuscript ZIP**. The companion manuscript contains the original validated scientific figures; this data repository does not redistribute those PDFs. Only the two new, author-generated concept-map PDFs and PNGs are included in `figures/`, with the shared editable source in `figure_sources/conceptual_maps.py`.
+## Version and rights
 
-## Scope and permissions
+Upstream: https://github.com/dsanmartins/acm_survey_repository . This candidate updates the existing content based on commit `f3093ca18de13d8b175e3b60a056dfd392cf6832`; it contains no `.git` directory. The original Git history is preserved outside the distribution.
 
-The separate manuscript archive includes 11 original, scientifically validated PDF figures and the approved researcher-process declaration. This repository archive includes Python figure source where available, but it does not claim standalone regeneration of all 11 PDFs. There is no Qiskit execution requirement. The authors have supplied a DOI for an existing Zenodo deposit (https://doi.org/10.5281/zenodo.24168011). This updated ZIP is a **new local editorial revision**, not evidence that Zenodo already serves these revised bytes. Check rights and coauthor approval before replacing or publishing any files; see `ZENODO_RELEASE_CHECKLIST.md`, `RIGHTS_AND_LIMITATIONS.md`, and `REPRODUCIBILITY.md`.
+The earlier deposit **10.5281/zenodo.24168011** is historical and is not a DOI for these revised bytes. No new DOI has been assigned or deposit made. The historical license notices are preserved. The new scoped CC BY 4.0 grant and retained MIT/component terms are explained below. See [RIGHTS_AND_LIMITATIONS.md](RIGHTS_AND_LIMITATIONS.md) and [ZENODO_RELEASE_CHECKLIST.md](ZENODO_RELEASE_CHECKLIST.md). Earlier release notes describe their historical versions, not the current consolidated counts.
+
+## License
+
+Original QCC data curation, results, category definitions, documentation and original figure designs covered by `LICENSE_MATRIX.csv` are licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (CC-BY-4.0); the full official legal code is in [LICENSE](LICENSE). Credit Daniel San Martín, Paul Leger, and Valter Vieira de Camargo using [CITATION.cff](CITATION.cff), retain applicable notices and the license link, and indicate changes. Do not imply endorsement.
+
+Original code and build configuration retain [MIT](licenses/MIT.txt). Embedded font components retain their own notices. See [LICENSE_SCOPE.md](LICENSE_SCOPE.md), [LICENSE_MATRIX.csv](LICENSE_MATRIX.csv) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for exact exceptions. Cited publications and externally owned metadata are not relicensed. The six complete bibliographic files are preserved, including both spreadsheets. Authorized institutional research access is confirmed by the authors; the applicable redistribution clause and retrieval route remain unverified. No prohibition or special copyright permission for ordinary bibliographic facts is inferred. Their RIGHTS_REVIEW_REQUIRED entries are a documentary reservation, not a finding of unlawful content. The complete local candidate remains unpublished pending that determination; see RIGHTS_AND_LIMITATIONS.md.
+
+The proposed `v2.0.0` changelog is [CHANGELOG.md](CHANGELOG.md). `.zenodo.json` supplies scoped-license and historical-lineage information for review; it does not create a record or DOI. If both citation files are present, Zenodo's GitHub integration uses `.zenodo.json` rather than `CITATION.cff`.

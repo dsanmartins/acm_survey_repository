@@ -1,47 +1,32 @@
 #!/usr/bin/env python3
-"""Verify integrity of the repository-only research/data package."""
-import csv
-import hashlib
+"""Verify the updated existing distribution; standard library only, no private roots."""
+import csv,hashlib,importlib.util,json,re
 from pathlib import Path
-
-R = Path(__file__).resolve().parents[1]
-
-def rows(path):
-    with (R/path).open(newline="",encoding="utf-8-sig") as fp:
-        return list(csv.DictReader(fp))
-
-def check(test, message):
-    if not test:
-        raise SystemExit("FAIL: "+message)
-
+ROOT=Path(__file__).resolve().parents[1]
+def rows(name):
+    with (ROOT/name).open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
 def main():
-    publications = rows("data/selected_publications.csv")
-    check(len(publications)==243, "expected 243 selected publication records")
-    check({x["paper_id"] for x in publications}=={x["paper_id"] for x in rows("data/bibliography/publications.csv")}, "bibliographic inventory IDs differ")
-    counts = [(col,sum(p[col]=="YES" for p in publications)) for col in ("selected_publication","analytical_publication","has_normalized_rq_items")]
-    check(counts==[("selected_publication",243),("analytical_publication",242),("has_normalized_rq_items",240)], "unexpected publication cohorts")
-    trace = rows("data/selection/candidates_343.csv")
-    check(len(trace)==343 and len({r["paper_id"] for r in trace})==343, "candidate selection trace must contain exactly 343 unique IDs")
-    stages={label:sum(r["final_selection_stage"]==label for r in trace) for label in ("SELECTED","EXCLUDED_TITLE_ABSTRACT","EXCLUDED_FULL_TEXT","NO_SCIENTIFIC_FT_DECISION")}
-    check(stages=={"SELECTED":243,"EXCLUDED_TITLE_ABSTRACT":87,"EXCLUDED_FULL_TEXT":10,"NO_SCIENTIFIC_FT_DECISION":3}, "inconsistent selection-stage counts")
-    check({r["paper_id"] for r in trace if r["final_selection_stage"]=="SELECTED"}=={r["paper_id"] for r in publications}, "selected IDs do not match publication index")
-    check(sum(r["full_text_input"]=="YES" for r in trace)==256, "expected 256 full-text stage inputs")
-    check(sum(r["full_text_access_status"]=="AVAILABLE" for r in trace)==253, "expected 253 assessable full texts")
-    check(sum(bool(r["title"]) for r in trace)==243, "metadata for nonselected candidates must remain uninferred")
-    run_rows=rows("data/selection/search_runs_8.csv")
-    check(len(run_rows)==8 and sum(int(r["raw_occurrences"]) for r in run_rows)==549, "search occurrence totals mismatch")
-    check(len(rows("data/selection/primary_duplicate_occurrences_188.csv"))==188, "primary duplicate counts mismatch")
-    check(len(rows("data/selection/supplementary_s4_occurrences_41.csv"))==41, "S4 occurrence counts mismatch")
-    check(len(rows("docs/PRISMA_2020_CROSSWALK.csv"))==27,"PRISMA 2020 mapping must include 27 items")
-    for entry in rows("MANIFEST_SHA256.csv"):
-        p=R/entry["path"]
-        check(p.is_file(), f"missing {entry['path']}")
-        check(hashlib.sha256(p.read_bytes()).hexdigest()==entry["sha256"], f"hash mismatch: {entry['path']}")
-        check(p.stat().st_size==int(entry["size_bytes"]), f"size mismatch: {entry['path']}")
-    check(not (R/"manuscript").exists(), "unexpected manuscript directory in repository-only package")
-    print("PASS: repository-only file integrity, selected-publication cohorts (243/242/240), candidate-screening trace (343/256/243), and retrospective PRISMA mapping")
-    print("The 11 original PDF figures and the compiled manuscript are in separately supplied manuscript ZIP; not tested here.")
-    print("Existing Zenodo DOI supplied: https://doi.org/10.5281/zenodo.24168011; revised ZIP deposit and rights scope require separate verification.")
-
-if __name__=="__main__":
-    main()
+    publications=rows('data/selected_publications.csv');byid={p['paper_id']:p for p in publications}
+    assert publications==rows('data/bibliography/publications.csv')
+    trace=rows('data/selection/candidates_343.csv');assert len(trace)==len({r['paper_id'] for r in trace})==343
+    assert {r['paper_id'] for r in trace if r['final_selection_stage']=='SELECTED'}==set(byid)
+    assert {s:sum(r['final_selection_stage']==s for r in trace) for s in ['SELECTED','EXCLUDED_TITLE_ABSTRACT','EXCLUDED_FULL_TEXT','NO_SCIENTIFIC_FT_DECISION']}=={'SELECTED':243,'EXCLUDED_TITLE_ABSTRACT':87,'EXCLUDED_FULL_TEXT':10,'NO_SCIENTIFIC_FT_DECISION':3}
+    assert sum(r['full_text_input']=='YES' for r in trace)==256 and sum(r['full_text_access_status']=='AVAILABLE' for r in trace)==253
+    assert all((bool(r['title']) and r['title']==byid[r['paper_id']]['title']) if r['selected_publication']=='YES' else not any(r[k] for k in ['title','authors','year','doi']) for r in trace)
+    assert len(rows('data/selection/search_runs_8.csv'))==8 and sum(int(r['raw_occurrences']) for r in rows('data/selection/search_runs_8.csv'))==549
+    assert len(rows('data/selection/primary_duplicate_occurrences_188.csv'))==188 and len(rows('data/selection/supplementary_s4_occurrences_41.csv'))==41
+    assert len(rows('docs/PRISMA_2020_CROSSWALK.csv'))==27
+    defs=rows('data/taxonomies/operational_definitions_22.csv');cats={c['category_id'] for c in rows('data/taxonomies/categories.csv')}
+    assert len(defs)==len({r['category_id'] for r in defs})==22 and all(r['category_id'] in cats and all(r[k] for k in ['category','definition','inclusion','exclusion_and_limits']) for r in defs)
+    entries=rows('MANIFEST_SHA256.csv');declared={r['path'] for r in entries};assert len(declared)==len(entries)
+    def included(p):
+        rel=p.relative_to(ROOT);return not any(k in ['.git','.cache','__pycache__','.venv'] for k in rel.parts) and not str(rel).startswith('results/generated_figures/') and str(rel)!='MANIFEST_SHA256.csv'
+    actual={str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file() and included(p)}
+    assert declared==actual,('MANIFEST_COVERAGE_DIFFERENCE',sorted(actual-declared),sorted(declared-actual))
+    for r in entries:
+        p=ROOT/r['path'];assert not p.is_symlink() and p.resolve().is_relative_to(ROOT)
+        assert p.stat().st_size==int(r['size_bytes']) and hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256'],('MANIFEST_MISMATCH',r['path'])
+    assert not (ROOT/'manuscript').exists()
+    print('PASS: complete SHA-256 manifest, 343-candidate selection, unchanged bibliographic inventory and 22 explanatory definitions.')
+    print('Historical DOI 10.5281/zenodo.24168011 is not an identifier for this candidate. No publication performed.')
+if __name__=='__main__':main()

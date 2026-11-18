@@ -1,57 +1,84 @@
 {
-  "RQ1": {
-    "approved_or_resolved_sets": 2033,
-    "context_application_proposals": 0,
-    "original_scopes": 2455,
-    "positive_memberships": 1683,
-    "positive_sets": 1472,
-    "scoped_nonpositive_sets": 561,
-    "source_items": 491,
-    "source_publications": 120,
-    "unapproved_or_incomplete": 422
+  "RQ": {
+    "RQ1": {
+      "context": 0,
+      "evidence_groups": 119,
+      "incomplete": 419,
+      "items": 490,
+      "memberships": 1682,
+      "positive_scopes": 1471,
+      "resolved": 2031,
+      "scoped_nonpositive": 560,
+      "scopes": 2450
+    },
+    "RQ2": {
+      "context": 0,
+      "evidence_groups": 181,
+      "incomplete": 0,
+      "items": 449,
+      "memberships": 860,
+      "positive_scopes": 860,
+      "resolved": 1347,
+      "scoped_nonpositive": 487,
+      "scopes": 1347
+    },
+    "RQ3": {
+      "context": 0,
+      "evidence_groups": 140,
+      "incomplete": 114,
+      "items": 197,
+      "memberships": 319,
+      "positive_scopes": 270,
+      "resolved": 280,
+      "scoped_nonpositive": 10,
+      "scopes": 394
+    },
+    "RQ4": {
+      "context": 0,
+      "evidence_groups": 142,
+      "incomplete": 0,
+      "items": 371,
+      "memberships": 741,
+      "positive_scopes": 741,
+      "resolved": 1113,
+      "scoped_nonpositive": 372,
+      "scopes": 1113
+    },
+    "RQ5": {
+      "context": 89,
+      "evidence_groups": 39,
+      "incomplete": 3,
+      "items": 47,
+      "memberships": 98,
+      "positive_scopes": 96,
+      "resolved": 96,
+      "scoped_nonpositive": 0,
+      "scopes": 188
+    }
   },
-  "RQ2": {
-    "approved_or_resolved_sets": 1353,
-    "context_application_proposals": 0,
-    "original_scopes": 1353,
-    "positive_memberships": 864,
-    "positive_sets": 864,
-    "scoped_nonpositive_sets": 489,
-    "source_items": 451,
-    "source_publications": 182,
-    "unapproved_or_incomplete": 0
-  },
-  "RQ3": {
-    "approved_or_resolved_sets": 280,
-    "context_application_proposals": 0,
-    "original_scopes": 394,
-    "positive_memberships": 319,
-    "positive_sets": 270,
-    "scoped_nonpositive_sets": 10,
-    "source_items": 197,
-    "source_publications": 140,
-    "unapproved_or_incomplete": 114
-  },
-  "RQ4": {
-    "approved_or_resolved_sets": 1116,
-    "context_application_proposals": 0,
-    "original_scopes": 1116,
-    "positive_memberships": 743,
-    "positive_sets": 743,
-    "scoped_nonpositive_sets": 373,
-    "source_items": 372,
-    "source_publications": 143,
-    "unapproved_or_incomplete": 0
-  },
-  "RQ5": {
-    "approved_or_resolved_sets": 96,
-    "context_application_proposals": 89,
-    "original_scopes": 188,
-    "positive_memberships": 98,
-    "positive_sets": 96,
-    "scoped_nonpositive_sets": 0,
-    "source_items": 47,
-    "source_publications": 39,
-    "unapproved_or_incomplete": 92
+  "counting_unit": "consolidated evidence group; bibliographic flags remain record-based",
+  "family_level_not_mapped_cells": 45,
+  "pending_rq5_pairings": 58,
+  "schema_version": 2,
+  "summary": {
+    "activation_authorized": true,
+    "analytical_evidence_groups": 241,
+    "bibliographic_analytical": 242,
+    "bibliographic_item_bearing": 240,
+    "bibliographic_selected": 243,
+    "categories": 86,
+    "category_changes": 0,
+    "classification_transfers": 0,
+    "figure4_cells": 28,
+    "figure4_evidence_group_union": 160,
+    "figure4_items": 381,
+    "independence_of_other_groups": "NOT_ASSERTED",
+    "item_bearing_evidence_groups": 239,
+    "items": 1554,
+    "memberships": 3700,
+    "scopes": 5492,
+    "selected_evidence_groups": 242,
+    "selection_decisions_changed": 0,
+    "status": "PASS_CONSOLIDATED_VIEW_V1"
   }
 }

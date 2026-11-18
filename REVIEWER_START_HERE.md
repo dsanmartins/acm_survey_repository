@@ -1,56 +1,15 @@
-# Reviewer quick start — quantum software quality survey
+# Reviewer entry point
 
-This companion data archive is **separate from** the LaTeX manuscript archive. It contains curated, sanitized data, deterministic analyses, and the **eight author-supplied database search strings (S1–S4)**. It does **not** reproduce the historical database results, eligibility judgments, or extraction from copyrighted full texts.
+Run `make verify`, `make verify-kappa`, `make reproduce` and `make composition` from the extracted package root. Python 3 and Make suffice; no private paths or external datasets are required.
 
-## Read the study
+1. Check the 243 bibliographic records and the 343-candidate selection trace. The 100 nonselected records have no newly inferred bibliographic identities.
+2. Inspect the one authorized consolidation in `data/bibliographic_to_evidence.csv`: LC0173 represents MorphQ++; LC0174 remains selected as an alternative manifestation. Both DOI are retained. No other group is asserted to be an independent study.
+3. Join an item to its exact scope and category/version memberships. The active view has 1,554 items, 5,492 scopes and 3,700 memberships. Original item aliases and the alternative's different scope states remain traceable; no classifications are transferred.
+4. Compare `results/reproduced/` with `results/reference/`. Scientific results use consolidated evidence-group denominators; bibliographic composition remains record-based.
+5. Inspect Figure 4's 28 same-item cells and 381 associated items. The 45 family–level cells stay blank/NOT_MAPPED. The 58 RQ5 proposals stay undecided and unapplied.
+6. Read `METHODOLOGY.md` for the scope of the screening review and historical kappa. The 12-record researcher–automated pilot is not human–human agreement or a whole-corpus reliability estimate.
+7. Read the 22 operational definitions and the 86-category catalogue. Descriptions explain existing categories; no historical membership or boundary is automatically recoded.
 
-Read `build/main.pdf` and `build/supplement.pdf` in the **separate manuscript ZIP**. The main article presents the five RQ findings and their evidential boundaries. The supplement includes the classification audit table (Table S8), representation/obligation examples (Table S9), and source-document composition (Table S10).
+`FIGURE_UPDATE.md` distinguishes public standalone generation of Figures 3/5/6 from numerical Figure 4 reproduction and manuscript-dependent generators. The current manuscript has Figures 1–6, not seven main figures.
 
-## Reproduce the quantitative outputs
-
-Requirements: Python 3 and GNU Make (or run the Python scripts directly). No quantum simulator or Qiskit installation is needed for the documented analytical checks.
-
-From the root of **this extracted repository** run:
-
-```bash
-make verify
-make reproduce
-make composition
-```
-
-- `make verify` confirms curated publication populations and repository integrity, and checks the three expected scientific outputs.
-- `make reproduce` regenerates the five-row RQ coverage table, the category-support data, and the 28 observed RQ2 family/mode combinations under `results/reproduced/`. They are compared with `results/reference/`.
-- `make composition` reproduces the bibliographic composition summary for Supplementary Table S10.
-
-**Do not interpret a successful run as a repetition of the source searches or independent validation of each extracted statement.** Unresolved classifications and proposed relationships retain their documented status.
-
-## Inspect the original search strings
-
-The author-supplied search texts are in `search_strings/scopus_s1.txt` through `scopus_s4.txt` and `search_strings/wos_s1.txt` through `wos_s4.txt`. See `SEARCH_STRINGS.md` for exact mappings, the supplied archive checksum, and limits of contemporary reruns. The licensed search-result exports and historical database snapshots are **not** distributed. Query files are not executed by `make verify` or `make reproduce`.
-
-## Trace a publication to a category
-
-1. Find `LCxxxx` in `data/selected_publications.csv` (or `.xlsx`), including title, authors, year, venue, DOI (when available) and RQ membership.
-2. Join `paper_id` to `data/items.csv`; then join `item_id` to `data/scopes.csv`.
-3. For an approved positive scope, join `scope_id` to `data/memberships.csv`.
-4. Interpret the category using `data/taxonomies/categories.csv` and its registered version.
-5. Consult the publication/source-evidence locators in the separate supplementary PDF to interpret the conclusion in context.
-
-## Where to find the main cross-checks
-
-| Scientific claim | Repository data |
-|---|---|
-| 243 selected / 242 analytical / 240 with normalized RQ items | `data/selected_publications.csv` |
-| RQ1–RQ5 classification accounting (Supplementary Table S8) | `results/reference/coverage.csv` |
-| Category support (Supplementary Tables S1–S5) | `results/reference/category_support.csv` |
-| RQ2 joint evidence map (Figure 4) | `results/reference/rq2_bubble.csv` |
-| Publication types and page spans (Supplementary Table S10) | `results/composition/` |
-| 58 undecided RQ5 pairing proposals | `data/rq5_pairing_proposals.csv` |
-
-## Limits and access
-
-No source-study full texts, licensed database exports, or private reviewer evidence are included. The 11 original PDF figures and manuscript LaTeX sources belong to the **separate manuscript ZIP** and have not been redrawn. The author-generated illustrative maps for Figure 3 (RQ1) and Figure 7 (RQ3--RQ5) are included in `figures/` and can be regenerated by `make figures-conceptual` after installing Matplotlib. Other source scripts may need historical assets outside this compact workflow. An existing Zenodo DOI has been supplied (https://doi.org/10.5281/zenodo.24168011), but this revised ZIP has not been confirmed as a newly deposited version. Consult `RIGHTS_AND_LIMITATIONS.md` for rights and version boundaries.
-
-## Selection traceability and reporting
-
-The repository includes [`selection_traceability.xlsx`](selection_traceability.xlsx) with **343 candidate records** and all documented selection-stage statuses, plus CSV views in `data/selection/`. The selected-publication bibliography supplies titles and DOIs only for the 243 selected records; no metadata are guessed for excluded candidates. The query-to-database mapping and the retrospective PRISMA 2020 crosswalk are in `SEARCH_STRINGS.md` and `PRISMA_2020_REPORTING.md`. Neither reconstructs original licensed database exports or constitutes a prospective PRISMA registration.
+The manifest certifies packaged bytes and completeness. Successful reproduction establishes consistency with approved inputs, not independent repetition of historical searches, screening, full-text extraction or effectiveness experiments. Historical methodological literal-question checks and the native SIGSEGV investigation are outside this standalone package and have not been declared resolved. No revised Zenodo version has been published.
