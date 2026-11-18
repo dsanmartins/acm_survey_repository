@@ -1,0 +1,47 @@
+{
+  "title": "Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Survey",
+  "creators": [
+    {
+      "name": "San Martín, Daniel",
+      "orcid": "0000-0001-5274-0148",
+      "affiliation": "Universidad Católica del Norte, Chile"
+    },
+    {
+      "name": "Leger, Paul",
+      "orcid": "0000-0003-0969-5139",
+      "affiliation": "Universidad Católica del Norte, Chile"
+    },
+    {
+      "name": "Vieira de Camargo, Valter",
+      "orcid": "0000-0002-6439-4649",
+      "affiliation": "Universidade Federal de São Carlos, Brazil"
+    }
+  ],
+  "description": "<p>Reproduction materials accompanying the survey with the same title, prepared for ACM Computing Surveys. The package preserves 243 selected bibliographic records and consolidates only the two MorphQ++ manifestations into one evidence group: 242 groups, 241 with analytical records, 239 with normalized items, 1,554 items, 5,492 classification scopes, 3,700 memberships and 86 categories. Figure 4 contains 28 same-item cells and 381 associated items. Both MorphQ++ DOI and all eligibility decisions are retained. The historical pilot reports researcher–automated agreement, not agreement between two human reviewers; the 22 operational definitions explain existing categories.</p><p>CC BY 4.0 applies only to original QCC contributions identified in LICENSE_MATRIX.csv and LICENSE_SCOPE.md. Original code retains MIT and embedded font components retain their notices. All six original bibliographic files and both complete spreadsheets are retained. The authors confirm authorized institutional research access; the actual retrieval route and applicable redistribution conditions remain unverified. No applicable prohibition has been demonstrated, and basic bibliographic facts are not treated as protected abstracts. This local candidate remains unpublished pending documentary closure; the license on original curation is not evidence of contractual redistribution permission. Cited publications are not relicensed.</p><p>Historical version DOI 10.5281/zenodo.24168011 belongs to concept DOI 10.5281/zenodo.24168010. These identifiers do not identify this candidate. Continuity must be established using the existing record’s new-version mechanism; related identifiers alone do not establish it. No article DOI or new version DOI is assigned.</p>",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "2.0.0",
+  "language": "eng",
+  "keywords": [
+    "quantum software quality",
+    "systematic survey",
+    "verification and validation",
+    "quantum software engineering",
+    "reproducibility",
+    "model-level assurance"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.24168011",
+      "relation": "isNewVersionOf",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/dsanmartins/acm_survey_repository",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Prepared metadata for manual author review; no DOI or publication_date is assigned. CC BY 4.0 covers original authorized contributions only, while code retains MIT and font components retain their notices. The six RIGHTS_REVIEW_REQUIRED entries distinguish ordinary factual metadata from an unresolved original-access contractual question; authorized institutional research access is declared, but neither redistribution permission nor an applicable prohibition is established. No reduced Excel projection or metadata correction has been adopted. The candidate is not represented as cleared for publication. Funding, contributions, conflicts and AI declarations are unchanged."
+}
