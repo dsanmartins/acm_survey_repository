@@ -1,3 +1,18 @@
+# Current publication record — approved post-publication documentary correction
+
+- Published release: [v2.0.0](https://github.com/dsanmartins/acm_survey_repository/releases/tag/v2.0.0), **2026-11-18**.
+- Published Zenodo version: **2.0.0**, DOI **10.5281/zenodo.24349998**, publication date **2026-11-18**.
+- Concept DOI: **10.5281/zenodo.24168010**. Historical version **1.0**: **10.5281/zenodo.24168011**.
+- GitHub release asset and local approved ZIP SHA-256: `007e1135da5f18de9b41bbd96e211abede1fdbb4d7a8a53bad61fafbc6eb289c`. Zenodo reports the same file size (1,128,191 bytes) and MD5 `2c3536fc318211ffd28df84edfb08ed3`; these were compared with the local ZIP without replacing it.
+- Final manuscript: seven main figures; Figure 6 is A–B–C circuits, Figure 7 is RQ3–RQ5. Figure S2 and its derivations remain supplemental.
+- Zenodo currently lists three creators and CC BY 4.0. This metadata does not establish resolution of the six RIGHTS_REVIEW_REQUIRED entries or remove MIT/component exceptions. Existing reservations remain in force; no retrospective rights approval is inferred.
+
+This record does not claim that every historical preparation step was completed or that downloaded Zenodo ZIP bytes were reverified. The author-approved six-file documentary correction is installed locally; its commit remains subject to separate authorization. No archive, checksum, tag, deposit, manuscript or supplement has been changed.
+
+The checklist below is preserved verbatim as a historical preparation record. Its future-tense instructions and statements that no release/DOI existed describe the preparation stage; they do not authorize a new release or describe current publication status.
+
+---
+
 # Publication preparation checklist — no release performed
 
 Proposed tag/version: **v2.0.0 / 2.0.0**. No publication date or new DOI is assigned. Preserve the existing Git history and publish only after explicit author authorization.

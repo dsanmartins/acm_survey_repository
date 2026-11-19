@@ -1,3 +1,13 @@
+# Post-publication documentary reconciliation — approved documentary correction
+
+Version **2.0.0** was published on **2026-11-18**: [GitHub release](https://github.com/dsanmartins/acm_survey_repository/releases/tag/v2.0.0), version DOI **10.5281/zenodo.24349998**, concept DOI **10.5281/zenodo.24168010**. Historical version **1.0** retains DOI **10.5281/zenodo.24168011**.
+
+The final approved manuscript has seven main figures: Figure 6 is the A–B–C circuit illustration; Figure 7 is the RQ3–RQ5 comparison. Figure S2 and its derivations remain supplemental. Script and asset names retain their existing identities. This approved documentation correction does not alter the published ZIP, its checksum, tag, release, Zenodo record, manuscript, supplement or scientific content. Publication does not establish closure of the six RIGHTS_REVIEW_REQUIRED reservations or the LC0161 limitation.
+
+The following preparation record is preserved verbatim. Statements about an unpublished proposal, six figures, unassigned identifiers or absent releases describe that earlier stage; they are not current publication status. The published release body also retains preparation wording; it is not changed by this local correction.
+
+---
+
 # Proposed v2.0.0 — unpublished
 
 This major-version proposal updates the existing reproduction repository without rewriting its history. The previous published Zenodo version is 1.0; no Git tags or GitHub releases were found at preparation time. Version 2.0.0 changes the counting-unit/result contract relative to that version, rather than adding publications or approving new classifications.

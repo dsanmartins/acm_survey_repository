@@ -1,8 +1,10 @@
 cff-version: 1.2.0
 type: dataset
 title: "Quantum Software Quality: Evidence, Assurance Mechanisms, and Model-Level Limits—A Survey"
-message: "Proposed unpublished version. CC BY 4.0 covers original contributions identified in LICENSE_MATRIX.csv; code retains MIT and component exceptions apply. Authorized institutional research access is declared; applicable contractual redistribution conditions remain unverified, with no prohibition established. Complete candidate remains unpublished pending documentary closure. Historical DOI 10.5281/zenodo.24168011 identifies an earlier deposit, not this candidate."
+message: "Published version 2.0.0; cite DOI 10.5281/zenodo.24349998. CC BY 4.0 covers original contributions identified in LICENSE_MATRIX.csv; code retains MIT and component exceptions apply. Authorized institutional research access is declared; applicable contractual redistribution conditions remain unverified, with no prohibition established. Publication does not establish documentary closure of the rights reservation. Concept DOI 10.5281/zenodo.24168010 identifies the version lineage; historical DOI 10.5281/zenodo.24168011 identifies version 1.0. These identifiers do not identify a new deposit of this documentary correction."
 version: "2.0.0"
+doi: "10.5281/zenodo.24349998"
+date-released: "2026-11-18"
 repository-code: "https://github.com/dsanmartins/acm_survey_repository"
 authors:
   - family-names: "San Martín"
